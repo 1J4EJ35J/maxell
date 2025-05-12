@@ -1,0 +1,42 @@
+.cards-zone{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0 1rem 1rem 1rem;
+    grid-template-rows: auto;
+}
+.card{
+    width: 100%;
+    display: grid;
+    gap: .75rem;
+    align-content: baseline;
+    //border: 1px solid var(--gray-2nd);
+    background-color: var(--c-dark-20t-100);
+    padding: 1rem;
+    .title-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+        border-bottom: 1px solid var(--gray-2nd);
+        .title{
+            width: fit-content;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--font-color-title);
+        }
+        
+    }
+    &.style-1{
+        grid-template-rows: 36px 1fr;
+        .list{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            gap: .75rem;
+        }
+    }
+}
+

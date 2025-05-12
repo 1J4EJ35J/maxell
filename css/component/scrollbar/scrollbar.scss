@@ -1,0 +1,28 @@
+.scroll-box{
+    width: 100%;
+    height: inherit;
+    overflow: auto;
+}
+.scroll-box .inner-box{
+    height: fit-content;
+}
+
+/* 共用滾動條軌道樣式 */
+.scroll-box::-webkit-scrollbar-track {
+    background: transparent; /* 軌道顏色 */
+    border-radius: 10px;
+}
+
+
+.scroll-box::-webkit-scrollbar {
+    height: 8px; 
+    width: 8px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background: var(--h-4th-100);
+    border-radius: 10px;
+    &:hover{
+        background: var(--h-1st-100);
+    }
+}

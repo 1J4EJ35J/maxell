@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pointer{
+    cursor: pointer !important;
+}
+
+
+body {
+    background: var(--bg-gradient-1);
+    display: block;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, p, span, a, small, strong, figure, figcaption, label, input, textarea, select, button, div{
+    color: var(--font-color-content);
+}

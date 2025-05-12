@@ -1,0 +1,27 @@
+.tab-zone.nav-tabs{
+    //background: var(--h-1st-100);
+    width: 100%;
+    height: fit-content;
+    border-bottom: 2px solid var(--btn-filled-0);
+    .nav-item{
+        background: 0;
+        .nav-link{
+            background: transparent;
+            border-color: transparent;
+            color: var(--font-default);
+            &.active{
+                background: var(--btn-filled-0);
+                border-color: var(--btn-filled-0);
+                color: var(--white-100);
+            }
+            
+        }
+    }
+}
+.tab-content{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 1.5rem);
+}
+//scrollbar綁在table上，部分頁面table的頁面會壞掉 
+

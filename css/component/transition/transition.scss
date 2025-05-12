@@ -1,0 +1,29 @@
+@mixin linear-025s{
+    transition: all .25s linear;
+}
+
+
+
+@mixin linear-030s{
+    transition: all .3s linear;
+}
+
+@mixin linear-050s{
+    transition:all .5s linear;
+}
+
+
+@mixin ease-025s{
+    transition: all .25s ease;
+}
+
+@mixin ease-030s{
+    transition: all .3s ease;
+}
+
+@mixin ease-050s{
+    transition:all .5s ease;
+}
+@mixin ease-100s{
+    transition:all 1s ease;
+}

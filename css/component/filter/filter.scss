@@ -1,0 +1,179 @@
+@import '../../for-component/for-component.scss';
+//filter 加上avtive時 設定body與soft-layout的 overflow:hidden !important; 
+.filter-sheet{
+    width: 0;
+    height: 0;
+    position: fixed;
+    z-index: 20;
+    .nav-top-btn-zone{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: .75rem;
+        padding: 0 2rem 0 0;
+        height: 56px;
+        background: transparent;
+        position: fixed;
+        z-index: 21;
+        top: 0;
+        right: 0;
+    }
+    .filter-sheet-wrapper{
+        &.active{
+            height: 150vh;
+            .filter-sheet-zone .filter-sheet-main-container{
+                right: 0;
+                opacity: 1;
+            }
+        }
+        position: fixed;
+        top: 0;
+        left:0;
+        display: flex;
+        width: 100vw;
+        height: 0;
+        z-index: 22;
+        justify-content: end;
+        background: var(--black-004);
+        backdrop-filter: blur(4px);
+        @include linear-030s;
+        .filter-sheet-zone{
+           position: relative;
+           width: 100%;
+           height: 100%;
+           .filter-sheet-main-container{
+                position: absolute;
+                top: 0;
+                right: -365px;
+                height: 100vh;
+                width: 360px;
+                opacity: 0;
+                @include linear-030s;
+                .filter-sheet-outline-box{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background: var(--bg-gradient-2);
+                    padding: 1rem;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 44px auto 1fr 44px;
+                    gap: 1rem;
+                }
+                .filter-header{
+                    width: calc(100% - 8px);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+                    border-bottom: 1px solid var(--gray-2nd);
+                    .title{
+                        font-size: 1.125rem;
+                        font-weight: 600;
+                        color: var(--font-color-title);
+                        padding: 0 0 .5rem 0;
+                    }
+                    .tools{
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        .line{
+                            width: 1px;
+                            height: 24px;
+                            margin-left: .75rem;
+                            margin-right: 0rem;
+                            border-left: 1px solid var(--gray-2nd);
+                        }
+                    }
+                    .onlyicon.style-1 .icon-control {
+                        font-size: 1.25rem;
+                    }
+                }
+                
+                .search-container.search-bar.style-1 {
+                    width: calc(100% - 8px);
+                    .input{
+                        width: 100%;
+                    }
+                    input:focus{
+                        //border-bottom: 1px solid var(--c-dark-50t-100);
+                        background: linear-gradient(180deg, #00aaed 0%,  #81ffff 70%);
+                        color: var(--c-dark-10t-100);
+                        //background: var(--c-dark-90t-100);
+                    }
+                    input:focus::placeholder{
+                        color: var(--c-dark-10t-100);
+                    }
+                }
+                .filter-list{
+                    .zone{
+                        width: 100%;
+                        height: fit-content;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        gap: .75rem;
+                        .filter-item{
+                            &.active{
+                                gap: .75rem;
+                                .filter-item-options{
+                                    display: block;
+                                }
+                            }
+                            width: 100%;
+                            height: fit-content;
+                            //padding: 1rem 0;
+                            padding-right: 8px;
+                            gap: 0rem;
+                            .title-box{
+                                width: 100%;
+                                height: fit-content;
+                                justify-content: space-between;
+                                display: flex;
+                                align-items: center;
+                                padding: .5rem 0;
+                                border-bottom: 1px solid var(--gray-2nd);
+                                .title{
+                                    font-size: 1rem;
+                                    color: var(--font-color-title);
+                                    font-weight: 600;
+                                }
+                                
+                            }
+                            .filter-item-options{
+                                width: 100%;
+                                display: none;
+                            }
+                            .radio-box{
+                                width: 100%;
+                                height: fit-content;
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                            }
+                            .select-container, .select.style-1{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    
+                }
+                .button-zone{
+                    margin: 0;
+                    padding: 0;
+                    display:grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: 1fr;
+                    .button.style-1{
+                        width: 100%;
+                    }
+                }
+           }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .filter-sheet .nav-top-btn-zone{
+        padding: 0 .75rem 0 0;
+    }
+}

@@ -1,0 +1,175 @@
+@charset "UTF-8";
+.pagination.table {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: calc(100vh - 56px - 1rem - 40px - 0.75rem - 0.75rem - 40px - 0.5rem) 40px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  gap: 0.75rem;
+}
+
+.pagination-zone.style-1 {
+  padding: 1rem 0 0rem 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-zone.style-1.active {
+  display: none;
+}
+.pagination-zone.style-1.show-5 {
+  display: flex;
+  pointer-events: auto;
+}
+.pagination-zone.style-1.show-3 {
+  display: none;
+  pointer-events: none;
+}
+.pagination-zone.style-1.show-3 .pagination li {
+  margin: 0 8px;
+}
+.pagination-zone.style-1 .pagination-container {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.pagination-zone.style-1 .pagination {
+  display: flex;
+  align-content: center;
+}
+.pagination-zone.style-1 .pagination a, .pagination-zone.style-1 .pagination span {
+  font-size: 1rem;
+  color: var(--font-color-smalltip);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-zone.style-1 .pagination li {
+  width: 1.8rem;
+  height: 2rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+  justify-content: center;
+  cursor: pointer;
+}
+.pagination-zone.style-1 .pagination li:hover {
+  background: var(--c-1st-100);
+}
+.pagination-zone.style-1 .pagination li:hover a, .pagination-zone.style-1 .pagination li:hover span {
+  color: var(--white-100);
+}
+.pagination-zone.style-1 .pagination li.active {
+  background: var(--c-1st-100);
+}
+.pagination-zone.style-1 .pagination li.active a, .pagination-zone.style-1 .pagination li.active span {
+  color: var(--white-100);
+}
+.pagination-zone.style-1 .pagination .PagedList-skipToFirst,
+.pagination-zone.style-1 .pagination .PagedList-skipToPrevious,
+.pagination-zone.style-1 .pagination .PagedList-ellipses,
+.pagination-zone.style-1 .pagination .PagedList-skipToNext,
+.pagination-zone.style-1 .pagination .PagedList-skipToLast {
+  background: transparent;
+}
+.pagination-zone.style-1 .pagination .PagedList-skipToFirst a, .pagination-zone.style-1 .pagination .PagedList-skipToFirst span,
+.pagination-zone.style-1 .pagination .PagedList-skipToPrevious a,
+.pagination-zone.style-1 .pagination .PagedList-skipToPrevious span,
+.pagination-zone.style-1 .pagination .PagedList-ellipses a,
+.pagination-zone.style-1 .pagination .PagedList-ellipses span,
+.pagination-zone.style-1 .pagination .PagedList-skipToNext a,
+.pagination-zone.style-1 .pagination .PagedList-skipToNext span,
+.pagination-zone.style-1 .pagination .PagedList-skipToLast a,
+.pagination-zone.style-1 .pagination .PagedList-skipToLast span {
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--gray-2nd);
+  margin-top: 2px;
+}
+.pagination-zone.style-1 .pagination .PagedList-skipToFirst.disabled a, .pagination-zone.style-1 .pagination .PagedList-skipToFirst.disabled span,
+.pagination-zone.style-1 .pagination .PagedList-skipToPrevious.disabled a,
+.pagination-zone.style-1 .pagination .PagedList-skipToPrevious.disabled span,
+.pagination-zone.style-1 .pagination .PagedList-ellipses.disabled a,
+.pagination-zone.style-1 .pagination .PagedList-ellipses.disabled span,
+.pagination-zone.style-1 .pagination .PagedList-skipToNext.disabled a,
+.pagination-zone.style-1 .pagination .PagedList-skipToNext.disabled span,
+.pagination-zone.style-1 .pagination .PagedList-skipToLast.disabled a,
+.pagination-zone.style-1 .pagination .PagedList-skipToLast.disabled span {
+  color: var(--c-1st-100);
+}
+.pagination-zone.style-1 .pagination .PagedList-skipToFirst:hover,
+.pagination-zone.style-1 .pagination .PagedList-skipToPrevious:hover,
+.pagination-zone.style-1 .pagination .PagedList-ellipses:hover,
+.pagination-zone.style-1 .pagination .PagedList-skipToNext:hover,
+.pagination-zone.style-1 .pagination .PagedList-skipToLast:hover {
+  background: transparent;
+}
+.pagination-zone.style-1 .pagination .PagedList-skipToFirst:hover a, .pagination-zone.style-1 .pagination .PagedList-skipToFirst:hover span,
+.pagination-zone.style-1 .pagination .PagedList-skipToPrevious:hover a,
+.pagination-zone.style-1 .pagination .PagedList-skipToPrevious:hover span,
+.pagination-zone.style-1 .pagination .PagedList-ellipses:hover a,
+.pagination-zone.style-1 .pagination .PagedList-ellipses:hover span,
+.pagination-zone.style-1 .pagination .PagedList-skipToNext:hover a,
+.pagination-zone.style-1 .pagination .PagedList-skipToNext:hover span,
+.pagination-zone.style-1 .pagination .PagedList-skipToLast:hover a,
+.pagination-zone.style-1 .pagination .PagedList-skipToLast:hover span {
+  color: var(--b-2nd-100);
+}
+.pagination-zone.style-1 .pagination .PagedList-skipToPrevious {
+  margin-right: 2rem;
+  width: 2rem;
+}
+.pagination-zone.style-1 .pagination .PagedList-skipToNext {
+  margin-left: 2rem;
+}
+.pagination-zone.style-1 .pagination li:nth-of-type(3) {
+  border-top-left-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+.pagination-zone.style-1 .pagination li:nth-last-of-type(3) {
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+.pagination-zone.style-1 .pagination .fa-solid {
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .pagination-zone.style-1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .pagination li {
+    display: none; /* 默認隱藏所有 li */
+  }
+  .pagination li.show {
+    display: inline-block; /* 僅顯示具有 .show 類的 li */
+  }
+}
+@media (max-width: 640px) {
+  .pagination-zone.style-1.show-5 {
+    display: none;
+    pointer-events: none;
+  }
+  .pagination-zone.style-1.show-3 {
+    display: flex;
+    pointer-events: auto;
+  }
+  .pagination-zone.style-1 .pagination .PagedList-skipToFirst,
+  .pagination-zone.style-1 .pagination .PagedList-skipToPrevious,
+  .pagination-zone.style-1 .pagination .PagedList-ellipses,
+  .pagination-zone.style-1 .pagination .PagedList-skipToNext,
+  .pagination-zone.style-1 .pagination .PagedList-skipToLast {
+    margin-top: -1px;
+  }
+  .pagination-zone.style-1 .pagination .PagedList-skipToNext {
+    margin-left: 1.5rem;
+  }
+  .pagination-zone.style-1 .pagination .PagedList-skipToPrevious {
+    margin-right: 1.5rem;
+  }
+}/*# sourceMappingURL=pagination.css.map */

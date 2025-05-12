@@ -1,0 +1,113 @@
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background: var(--c-dark-10t-100);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 2rem;
+  justify-content: space-between;
+}
+.nav-top:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: var(--gradient-line-2);
+  animation: lineExpand 1.5s ease-in forwards;
+}
+@keyframes lineExpand {
+  0% {
+    width: 0;
+    height: 1px;
+  }
+  30% {
+    height: 1px;
+  }
+  70% {
+    height: 3px;
+  }
+  90% {
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 1px;
+  }
+}
+.nav-top .left-side {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-top .left-side .title-box {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--gray-2nd);
+}
+.nav-top .left-side .title-box .svg-box {
+  width: auto;
+  height: 36px;
+}
+.nav-top .left-side .title-box .svg-box svg {
+  width: auto;
+  height: 100%;
+}
+.nav-top .left-side .title-box .title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white-100);
+  margin-left: 0.5rem;
+}
+.nav-top .right-side {
+  width: calc(120px + 2rem);
+  height: 100%;
+  pointer-events: none;
+}
+.nav-top .button.outlined.style-3.nav-sidebar-btn {
+  width: 40px;
+  height: 40px;
+}
+.nav-top .button.outlined.style-3.nav-sidebar-btn.menu, .nav-top .button.outlined.style-3.nav-sidebar-btn.close {
+  display: none;
+}
+.nav-top .button.outlined.style-3.nav-sidebar-btn.menu.active, .nav-top .button.outlined.style-3.nav-sidebar-btn.close.active {
+  display: flex;
+}
+.nav-top .button.outlined.style-3.nav-sidebar-btn .icon-control {
+  display: block;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-top {
+    padding: 0 0 0 0;
+  }
+  .nav-top .left-side {
+    gap: 0;
+  }
+  .nav-top .right-side {
+    width: 120px;
+  }
+  .nav-top .button.outlined.style-3.nav-sidebar-btn {
+    width: 48px;
+  }
+  .nav-top .left-side .title-box {
+    padding-left: 1rem;
+  }
+  .nav-top .left-side .title-box .svg-box {
+    height: 28px;
+  }
+  .nav-top .left-side .title-box .title {
+    font-size: 1.125rem;
+  }
+  .nav-top:after {
+    animation: lineExpand 0.45s ease-in forwards;
+  }
+}/*# sourceMappingURL=nav.css.map */

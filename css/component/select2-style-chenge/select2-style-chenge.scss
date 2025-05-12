@@ -1,0 +1,63 @@
+//以下針對select2 樣式修改
+
+
+.select2-container--bootstrap-5 .select2-selection{
+    width: 100%;
+    padding-bottom: 0;
+    padding: 3px .5rem 0 .5rem;
+}
+.select2.select2-container.select2-container--bootstrap-5{
+    min-height: 40px;
+    height: fit-content;
+}
+.select2-container--bootstrap-5.select2-selection{
+    min-height: 40px
+}
+.select2-container .select2-selection--multiple{
+    min-height: 40px
+}
+
+.select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice{
+   gap: 4px;
+   padding: 4px 4px 4px 7px;
+   border-radius: 2rem;
+   order: 1;
+   font-size: 14.5px;
+   margin-bottom: 3.25px;
+}
+.select2-container--bootstrap-5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove{
+    order: 2;
+    width: 14px;
+    height: 14px;
+    margin-right: .25rem;
+    border-radius: 50%;
+}
+.select2.select2-container.select2-container--bootstrap-5.select2-container--below{
+    width: 100% !important;
+}
+.select2.select2-container.select2-container--bootstrap-5{
+    width: 100% !important;
+}
+
+.select2-container--bootstrap-5 .select2-selection--multiple .select2-search{
+    border-top: 0px solid var(--h-1st-100);
+    //display: none;
+    height: 0;
+    opacity: 0;
+}
+.select2-container--bootstrap-5.select2-container--open .select2-selection--multiple .select2-search{
+    //display: block;
+    border-top: 1px solid var(--h-1st-100);
+    height: 24px;
+    opacity: 1;
+}
+.select2 .select2-container .select2-container--bootstrap-5 .select2-container--focus .select2-container--below .select2-container--open{
+    height: fit-content;
+}
+.select2-container--open .select2-dropdown{
+    top: 0;
+}
+.select2-container--bootstrap-5 .select2-selection--multiple .select2-search .select2-search__field{
+    width: 100% !important;
+    min-width: 100% !important;
+}

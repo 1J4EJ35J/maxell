@@ -1,0 +1,110 @@
+:root {
+    --c:197;
+    --c-1st-100:hsla(var(--c), 73%, 55%, 1); /* main/btn bg */
+    --c-2nd-100:hsla(var(--c), 23%, 92%, 1); /* body 背景*/
+    --c-1st-070:hsla(var(--c), 73%, 50%, .7);
+    --c-1st-050:hsla(var(--c), 73%, 50%, .5);
+    --c-1st-040:hsla(var(--c), 73%, 50%, .4);
+    --c-1st-020:hsla(var(--c), 73%, 50%, .2);
+    --c-1st-010:hsla(var(--c), 73%, 50%, .1);
+    --c-1st-008:hsla(var(--c), 73%, 50%, .08);
+    --c-1st-000:hsla(var(--c), 73%, 50%, 0);
+    --c-3rd-100:hsla(var(--c), 90%, 75%, 1);
+
+
+    --c-dark-10t-010:hsla(var(--c), 5%, 10%, .1);
+    --c-dark-10t-100:hsla(var(--c), 5%, 10%, 1);
+    --c-dark-15t-100:hsla(var(--c), 5%, 15%, 1);
+    --c-dark-20t-100:hsla(var(--c), 5%, 20%, 1);
+    --c-dark-25t-100:hsla(var(--c), 5%, 25%, 1); /*區域背景淡色*/
+    --c-dark-30t-100:hsla(var(--c), 5%, 30%, 1);
+    --c-dark-35t-100:hsla(var(--c), 5%, 35%, 1);
+    --c-dark-40t-100:hsla(var(--c), 5%, 40%, 1);
+    --c-dark-45t-100:hsla(var(--c), 5%, 45%, 1);
+    --c-dark-50t-100:hsla(var(--c), 5%, 50%, 1);
+    --c-dark-60t-100:hsla(var(--c), 5%, 60%, 1);
+    --c-dark-70t-100:hsla(var(--c), 5%, 70%, 1);
+    --c-dark-80t-100:hsla(var(--c), 5%, 80%, 1);
+    --c-dark-90t-100:hsla(var(--c), 5%, 90%, 1);
+    --c-dark-95t-100:hsla(var(--c), 5%, 95%, 1);
+
+    --bg-gradient-1:linear-gradient(-24deg, var(--b-dark-10t-100) 43%, var(--c-dark-10t-100) 100%);
+    --bg-gradient-2:linear-gradient(-14deg, var(--b-dark-10t-100) 14%, var(--c-dark-15t-100) 760%);
+
+    --b:210;
+    --b-1st-100:hsla(var(--b), 64%, 62%, 1); 
+    --b-2nd-100:hsla(var(--b), 58%, 45%, 1); 
+    --b-3rd-100:hsla(var(--b), 89%, 15%, 1); 
+    --b-4th-100:hsla(var(--b), 100%, 32%, 1); 
+
+    --b-1st-050:hsla(var(--b), 64%, 62%, .5); 
+    --b-1st-020:hsla(var(--b), 64%, 62%, .2);  
+    --b-1st-010:hsla(var(--b), 64%, 62%, .1);  
+
+    --b-dark-10t-100:hsla(var(--b), 5%, 10%, 1);
+    --b-dark-20t-100:hsla(var(--b), 5%, 20%, 1);
+    --b-dark-30t-100:hsla(var(--b), 5%, 30%, 1);
+    --b-dark-40t-100:hsla(var(--b), 5%, 40%, 1);
+    --b-dark-50t-100:hsla(var(--b), 5%, 50%, 1);
+    --b-dark-60t-100:hsla(var(--b), 5%, 60%, 1);
+    --b-dark-70t-100:hsla(var(--b), 5%, 70%, 1);
+
+    --h:160;
+    --h-1st-100:hsla(var(--h), 93%, 50%, 1);
+    --h-1st-200:hsla(var(--h), 3%, 90%, 1);
+
+    /*NAV-sidebar*/
+    --navSidebar-body-bg:rgb(255, 255, 255);
+    --navSidebar-title-bg:hsla(210, 65%, 35%, 1);  /*nav option bg*/
+    --navSidebar-option-bg:hsla(var(--c), 93%, 50%, .1);  /*nav option bg*/
+
+    --navSidebar-title-hover:linear-gradient(80deg, #0af6ee 30%, #1454BE 100%);
+    --navSidebar-option-hover:linear-gradient(160deg, #0092cc 20%, #87ffff 100%);
+    --navSidebar-option-focus:linear-gradient(140deg, #87ffff 0%, #0092cc 67%);
+    --navSidebar-option-2:rgb(107, 255, 97);
+    --navSidebar-option-1:hsla(56, 100%, 72%, 1);
+
+    --gradient-line-1:linear-gradient(78deg, #033786 56%, #56ffff 70%,#005ba5 87%);
+    --gradient-line-2:linear-gradient(90deg, #3963ce 64%, #56ffff 77%,#357fbc 87%);
+    --gradient-line-3:linear-gradient(90deg, #3963ce 24%, #56ffff 37%,#357fbc 57%);
+
+    /*BUTTON*/
+    --btn-outline-1:#c1edff; /*BUTTON outlined hover 第2層*/
+    --btn-outline-2:rgb(237, 255, 158); /*BUTTON outlined hover 第3層*/
+    --btn-filled-1:linear-gradient(70deg, #1454BE 8%,#0af6ee 60%); /*BUTTON filled hover 第2層*/
+    --btn-filled-2:hsla(56, 100%, 72%, 1); /*BUTTON filled hover 第3層*/
+    --btn-filled-0:hsla(var(--b), 56%, 53%, 1); /*BUTTON filled hover 第0層*/
+
+    --white-100:hsla(0, 0%, 100%, 1);
+    --white-007:hsla(0, 0%, 100%, .7);
+    --white-004:hsla(0, 0%, 100%, .4);
+    --white-015:hsla(0, 0%, 100%, .15);
+    --white-000:hsla(0, 0%, 100%, 0);
+    --black-100:hsla(0, 0%, 0%, 1);
+    --black-008:hsla(0, 0%, 0%, .8);
+    --black-007:hsla(0, 0%, 0%, .7);
+    --black-004:hsla(0, 0%, 0%, .4);
+    --black-000:hsla(0, 0%, 0%, 0);
+
+
+  
+    --gray-disable:#bababa;
+    --gray-1st:hsla(var(--b), 65%, 30%, 1); 
+    --gray-2nd:var(--c-dark-30t-100); /* light line / input select 外框 底線*/
+    --gray-3rd:hsl(var(--b), 72%, 47%);/*dark line*/
+    --gray-4th:hsl(var(--b), 0%, 48%);
+    --gray-5th:hsl(178, 61%, 91%);/*區域背景淡色*/
+
+    --error:rgb(231, 56, 56); /*錯誤文字*/
+    /*FONT*/
+    --font-color-title:hsla(0, 5%, 90%, 1); /*給默認的標題*/
+    --font-color-content:hsla(var(--c), 5%, 90%, 1); /*給默認的文字*/
+    --font-color-smalltip:hsla(var(--c), 5%, 90%, 1); /*給tip的文字*/
+
+    /*shadow*/
+    --shadow-1st: 3px 3px 8px 0px rgb(73, 73, 73);
+    --shadow-2nd: 2px 4px 6px 0px rgb(73, 73, 73);
+
+    
+    
+  }

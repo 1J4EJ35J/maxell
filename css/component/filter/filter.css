@@ -1,0 +1,177 @@
+.filter-sheet {
+  width: 0;
+  height: 0;
+  position: fixed;
+  z-index: 20;
+}
+.filter-sheet .nav-top-btn-zone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 0 2rem 0 0;
+  height: 56px;
+  background: transparent;
+  position: fixed;
+  z-index: 21;
+  top: 0;
+  right: 0;
+}
+.filter-sheet .filter-sheet-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 0;
+  z-index: 22;
+  justify-content: end;
+  background: var(--black-004);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  transition: all 0.3s linear;
+}
+.filter-sheet .filter-sheet-wrapper.active {
+  height: 150vh;
+}
+.filter-sheet .filter-sheet-wrapper.active .filter-sheet-zone .filter-sheet-main-container {
+  right: 0;
+  opacity: 1;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container {
+  position: absolute;
+  top: 0;
+  right: -365px;
+  height: 100vh;
+  width: 360px;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-sheet-outline-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-gradient-2);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 44px auto 1fr 44px;
+  gap: 1rem;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-header {
+  width: calc(100% - 8px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid var(--gray-2nd);
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-header .title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--font-color-title);
+  padding: 0 0 0.5rem 0;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-header .tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-header .tools .line {
+  width: 1px;
+  height: 24px;
+  margin-left: 0.75rem;
+  margin-right: 0rem;
+  border-left: 1px solid var(--gray-2nd);
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-header .onlyicon.style-1 .icon-control {
+  font-size: 1.25rem;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .search-container.search-bar.style-1 {
+  width: calc(100% - 8px);
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .search-container.search-bar.style-1 .input {
+  width: 100%;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .search-container.search-bar.style-1 input:focus {
+  background: linear-gradient(180deg, #00aaed 0%, #81ffff 70%);
+  color: var(--c-dark-10t-100);
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .search-container.search-bar.style-1 input:focus::-moz-placeholder {
+  color: var(--c-dark-10t-100);
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .search-container.search-bar.style-1 input:focus::placeholder {
+  color: var(--c-dark-10t-100);
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone .filter-item {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 8px;
+  gap: 0rem;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone .filter-item.active {
+  gap: 0.75rem;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone .filter-item.active .filter-item-options {
+  display: block;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone .filter-item .title-box {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--gray-2nd);
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone .filter-item .title-box .title {
+  font-size: 1rem;
+  color: var(--font-color-title);
+  font-weight: 600;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone .filter-item .filter-item-options {
+  width: 100%;
+  display: none;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone .filter-item .radio-box {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone .filter-item .select-container, .filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .filter-list .zone .filter-item .select.style-1 {
+  width: 100%;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .button-zone {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+.filter-sheet .filter-sheet-wrapper .filter-sheet-zone .filter-sheet-main-container .button-zone .button.style-1 {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .filter-sheet .nav-top-btn-zone {
+    padding: 0 0.75rem 0 0;
+  }
+}/*# sourceMappingURL=filter.css.map */
