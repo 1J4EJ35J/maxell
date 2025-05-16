@@ -1,0 +1,58 @@
+$icon-color: rgba(255, 255, 255, 0.7);
+$icon-hover-transition: all linear 0.3s;
+$icon-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+.video-container {
+    position: relative;
+    width: 100%;
+
+    video {
+        width: 100%;
+        height: auto;
+        display: block;
+        cursor: pointer;
+    }
+
+    .video-play-icon,
+    .video-pause-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        color: $icon-color;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s ease, $icon-hover-transition;
+        z-index: 10;
+        text-shadow: $icon-shadow;
+        pointer-events: none;
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    .title-box{
+        width: 100%;
+        padding-bottom: .75rem;
+        border-bottom: 1px solid var(--c-01-100);
+        .title{
+            color: var(--c-01-100);
+        }
+    }
+    .hot,
+    .type{
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 2.25rem;
+        
+    }
+}
+@media screen and (max-width: 480px){
+
+}

@@ -1,0 +1,48 @@
+.disc-overview .overview .title-box {
+  width: 100%;
+  padding-bottom: 0.75rem;
+}
+.disc-overview .overview .title-box .title {
+  color: var(--c-01-100);
+}
+.disc-overview .popup.style-1 .popup-wrapper .popup-zone {
+  max-width: 450px;
+}
+.disc-overview .popup.style-1 .popup-wrapper .popup-zone .popup-container {
+  gap: 0;
+}
+.disc-overview .outter {
+  width: 92%;
+}
+.disc-overview .outter .proportional-tool-ratio1x1.ratio1x1-album-img {
+  max-width: unset;
+}
+.disc-overview .outter .proportional-tool-ratio1x1.ratio1x1-album-img .img-control {
+  width: 99%;
+  height: auto;
+}
+.disc-overview .swiper-button-prev, .disc-overview .swiper-button-next {
+  top: 60%;
+  height: 32px;
+  width: 32px;
+}
+.disc-overview .swiper-button-next {
+  right: -12px;
+}
+.disc-overview .swiper-button-prev {
+  left: -12px;
+}
+.disc-overview .swiper-button-next:after, .disc-overview .swiper-button-prev:after {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .popup.style-1 .popup-wrapper .popup-zone {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .popup.style-1 .popup-wrapper .popup-zone {
+    width: 90%;
+  }
+}/*# sourceMappingURL=disc-overview.css.map */

@@ -1,5 +1,6 @@
 .page-header.style-1 {
   display: flex;
+<<<<<<< HEAD
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -83,4 +84,54 @@
   font-size: 1.025rem;
   font-weight: 600;
   color: var(--font-color-title);
+=======
+  position: relative;
+  width: 100%;
+  height: 22.5rem;
+  overflow: hidden;
+  justify-content: center;
+}
+.page-header.style-1 .title-box {
+  position: absolute;
+  top: 0;
+  width: 1200px;
+  max-width: 1200px;
+  height: 100%;
+  padding: 0 0 2rem 0;
+  display: flex;
+  align-items: flex-end;
+}
+.page-header.style-1 .title-box .title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--font-color-title);
+}
+.page-header.style-1 .img-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.page-header.style-1 .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: 23%;
+     object-position: 23%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1280px) {
+  .page-header.style-1 .title-box {
+    width: 100%;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page-header.style-1 .title-box {
+    width: 100%;
+    padding: 0 15px 2.5rem 15px;
+  }
+>>>>>>> 9aaa4f0 (Initial commit)
 }/*# sourceMappingURL=page-header.css.map */

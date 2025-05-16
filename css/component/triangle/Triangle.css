@@ -1,0 +1,21 @@
+.-triangle-1 {
+  width: 8px;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translateY(1px);
+}
+.-triangle-1 svg {
+  width: 100%;
+  height: auto;
+}
+
+.-triangle-2 {
+  width: 12px;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translateY(2px);
+}
+.-triangle-2 svg {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=Triangle.css.map */

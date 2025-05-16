@@ -7,13 +7,58 @@
     cursor: pointer !important;
 }
 
-
 body {
-    background: var(--bg-gradient-1);
-    display: block;
-    padding: 0;
 }
 
 h1, h2, h3, h4, h5, p, span, a, small, strong, figure, figcaption, label, input, textarea, select, button, div{
     color: var(--font-color-content);
 }
+
+a{
+    text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.-mw{
+    width: 1200px;
+    max-width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
+    justify-self: center;
+}
+.-ntop{
+    margin-top: 60px;
+}
+.-s-padding-t{
+    padding-top: 4rem;
+}
+.-s-padding-b{
+    padding-bottom: 5rem;
+}
+@media screen and (max-width: 1280px){
+    .-mw{
+        width: 100%;
+        max-width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .-mw{
+        width: 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .-s-padding-t{
+    padding-top: 40px;
+    }
+    .-s-padding-b{
+        padding-bottom: 40px;
+    }
+}
+    

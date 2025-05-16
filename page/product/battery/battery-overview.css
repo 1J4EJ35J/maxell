@@ -1,0 +1,7 @@
+.battery-overview .overview .title-box {
+  width: 100%;
+  padding-bottom: 0.75rem;
+}
+.battery-overview .overview .title-box .title {
+  color: var(--c-01-100);
+}/*# sourceMappingURL=battery-overview.css.map */

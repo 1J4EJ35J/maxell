@@ -1,0 +1,50 @@
+.video-container {
+  position: relative;
+  width: 100%;
+}
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+.video-container .video-play-icon,
+.video-container .video-pause-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease, all linear 0.3s;
+  z-index: 10;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.video-container .video-play-icon.active,
+.video-container .video-pause-icon.active {
+  opacity: 1;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.product .title-box {
+  width: 100%;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--c-01-100);
+}
+.product .title-box .title {
+  color: var(--c-01-100);
+}
+.product .hot,
+.product .type {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 2.25rem;
+}/*# sourceMappingURL=home.css.map */

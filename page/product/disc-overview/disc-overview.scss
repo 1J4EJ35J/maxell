@@ -1,0 +1,57 @@
+.disc-overview {
+    .overview {
+        .title-box {
+            width: 100%;
+            padding-bottom: 0.75rem;
+
+            .title {
+                color: var(--c-01-100);
+            }
+        }
+    }
+
+    .popup.style-1 .popup-wrapper .popup-zone {
+        max-width: 450px;
+    }
+.popup.style-1 .popup-wrapper .popup-zone .popup-container{
+    gap: 0;
+}
+    .outter {
+        width: 92%;
+        .proportional-tool-ratio1x1.ratio1x1-album-img {
+            max-width: unset;
+            .img-control{
+                width: 99%;
+                height: auto;
+            }
+        }
+    }
+    .swiper-button-prev, .swiper-button-next{
+        top: 60%;
+        height: 32px;
+        width: 32px;
+    }
+
+    .swiper-button-next {
+        right: -12px;
+    }
+
+    .swiper-button-prev {
+        left: -12px;
+    }
+    .swiper-button-next:after,.swiper-button-prev:after{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .popup.style-1 .popup-wrapper .popup-zone {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .popup.style-1 .popup-wrapper .popup-zone {
+        width: 90%;
+    }
+}
