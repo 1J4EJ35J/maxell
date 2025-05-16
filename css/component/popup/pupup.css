@@ -1,20 +1,11 @@
 .popup {
-<<<<<<< HEAD
-  display: none;
-=======
   display: block;
->>>>>>> 9aaa4f0 (Initial commit)
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 40;
-<<<<<<< HEAD
-}
-.popup.active {
-  display: block;
-=======
   opacity: 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
           clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -24,7 +15,6 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   opacity: 1;
->>>>>>> 9aaa4f0 (Initial commit)
 }
 .popup.style-1 .popup-wrapper {
   width: 100%;
@@ -33,11 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-  background: var(--black-007);
-=======
   background: var(--black-070);
->>>>>>> 9aaa4f0 (Initial commit)
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
@@ -74,19 +60,11 @@
   animation: grow-line 1s ease-out forwards;
 }
 .popup.style-1 .popup-wrapper .popup-zone {
-<<<<<<< HEAD
-  padding: 1rem 0rem 1rem 1rem;
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
-  background: var(--c-dark-10t-100);
-  position: relative;
-=======
   padding: 1.5rem 1rem 2rem 1rem;
   width: 60%;
   background: var(--white-100);
   position: relative;
   max-width: unset;
->>>>>>> 9aaa4f0 (Initial commit)
 }
 .popup.style-1 .popup-wrapper .popup-zone .popup-container {
   width: 100%;
@@ -101,21 +79,6 @@
   width: calc(100% - 2px);
 }
 .popup .title-box {
-<<<<<<< HEAD
-  width: calc(100% - 1rem);
-  height: 40px;
-  display: flex;
-  border-bottom: 1px solid var(--gray-2nd);
-  align-items: center;
-  justify-content: space-between;
-}
-.popup .title-box .title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  padding-bottom: 1rem;
-}
-.popup .title-box .onlyicon.style-1 .icon-control {
-=======
   width: 100%;
   height: 40px;
   display: flex;
@@ -128,7 +91,6 @@
   font-weight: 600;
 }
 .popup .title-box .icon-control {
->>>>>>> 9aaa4f0 (Initial commit)
   font-size: 20px;
 }
 .popup .item {
