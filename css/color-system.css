@@ -35,8 +35,8 @@
     --p-01-100:hsla(var(--p), 85%, 63%, 1); 
 
     --white-100:hsla(0, 0%, 100%, 1);
-    --white-007:hsla(0, 0%, 100%, .7);
-    --white-004:hsla(0, 0%, 100%, .4);
+    --white-070:hsla(0, 0%, 100%, .7);
+    --white-040:hsla(0, 0%, 100%, .4);
     --white-015:hsla(0, 0%, 100%, .15);
     --white-000:hsla(0, 0%, 100%, 0);
     --black-100:hsla(0, 0%, 0%, 1);
@@ -54,8 +54,8 @@
     --gray-04:var(--c-dark-20t-100);
     --error:var(--c-02-100); /*錯誤文字*/
     /*FONT*/
-    --font-color-title:var(--c-dark-10t-100); /*給默認的標題*/
-    --font-color-content:var(--c-dark-30t-100); /*給默認的文字*/
+    --font-color-title:var(--c-dark-20t-100); /*給默認的標題*/
+    --font-color-content:var(--c-dark-40t-100); /*給默認的文字*/
     --font-color-smalltip:var(--c-dark-25t-100); /*給tip的文字*/
 
     /*shadow*/

@@ -92,6 +92,7 @@
 }
 .popup .title-box .icon-control {
   font-size: 20px;
+  cursor: pointer;
 }
 .popup .item {
   width: 100%;

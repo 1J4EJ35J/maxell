@@ -1,7 +1,10 @@
 .battery-overview .overview .title-box {
   width: 100%;
-  padding-bottom: 0.75rem;
+  padding-bottom: 2rem;
 }
 .battery-overview .overview .title-box .title {
   color: var(--c-01-100);
+}
+.battery-overview .ratio1x1 .card-zone .card-container {
+  cursor: pointer;
 }/*# sourceMappingURL=battery-overview.css.map */

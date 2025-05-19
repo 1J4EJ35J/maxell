@@ -1,0 +1,4 @@
+.SR-CR-LR .table.style-1 .table-header .tr,
+.SR-CR-LR .table.style-1 .table-body .tr {
+  grid-template-columns: 160px repeat(5, 140px);
+}/*# sourceMappingURL=SR-CR-LR.css.map */

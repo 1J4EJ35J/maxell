@@ -1,0 +1,10 @@
+.Alkaline{
+    .table.style-1 .table-header .tr,
+    .table.style-1 .table-body .tr{
+        grid-template-columns: 160px repeat(5, 140px);
+    }
+    .main-img.img-container.proportional-tool-ratio1x1.ratio1x1-album-img.-p445{
+        width: 100%;
+        max-width: unset;
+    }
+}

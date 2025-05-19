@@ -14,18 +14,16 @@
     border: 0;
     width: fit-content;
     background: transparent;
+    border-radius: .38rem;
 }
 .style-1.filled{
     min-width: 120px;
     height: 40px;
     padding:.25rem 2rem;
-    background: var(--c-dark-30t-100);
+    background: var(--c-01-100);
     border:0;
-    .outline{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
+    outline: 2px solid var(--c-01-100);
+    outline-offset: -2px;
     .icon-control{
         font-size: 1rem;
         color:var(--white-100);
@@ -38,48 +36,11 @@
         z-index: 1;
         @include ease-025s;
     }
-    &::before{
-        content: "";
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        top: 140px;
-        left: auto;
-        right: calc(100% + 40px);
-        background: var(--btn-filled-2);
-        @include ease-050s;
-        transform: rotate(60deg);
-        opacity: 0;
-    }
-    &::after{
-        content: "";
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        top: 140px;
-        left: auto;
-        right: calc(100% + 40px);
-        background: var(--btn-filled-1);
-        @include ease-100s;
-        transform: rotate(60deg);
-        opacity: 0;
-    }
+    
     &:hover{
-        &::before{
-            top: -40px;
-            left: calc(88% - 0px);
-            right: auto;
-            opacity: 1;
-        }
-        &::after{
-            content: "";
-            top: -40px;
-            left: 88%;
-            right: auto;
-            opacity: 1;
-        }
-        .icon-control, .text{
-            //color: var(--font-default);
+        background: var(--white-100);
+        .text{
+            color:var(--c-01-100);
         }
     }
     &.disable{
@@ -116,50 +77,9 @@
         font-size: 1rem;
         color:var(--white-100);
     }
-    &::before{
-        content: "";
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        top: 140px;
-        left: auto;
-        right: calc(100% + 40px);
-        background: var(--btn-filled-2);
-        @include ease-050s;
-        transform: rotate(60deg);
-        opacity: 0;
-    }
-    &::after{
-        content: "";
-        width: 120px;
-        height: 120px;
-        position: absolute;
-        top: 140px;
-        left: auto;
-        right: calc(100% + 40px);
-        background: var(--btn-filled-1);
-        @include ease-100s;
-        transform: rotate(60deg);
-        opacity: 0;
-    }
+    
     &:hover{
-        &::before{
-            content: "";
-            top: -40px;
-            left: calc(88% - 0px);
-            right: auto;
-            opacity: 1;
-        }
-        &::after{
-            content: "";
-            top: -40px;
-            left: 88%;
-            right: auto;
-            opacity: 1;
-        }
-        .icon-control, .text{
-            //color: var(--font-default);
-        }
+        
     }
     &.disable{
         background: var(--gray-disable);
@@ -177,7 +97,7 @@
     width: fit-content;
     height: 32px;
     padding: 0rem .5rem;
-    background: var(--c-dark-30t-100);
+    background: var(--c-01-100);
     border: 0;
     .outline{
         position: absolute;
@@ -196,58 +116,10 @@
         z-index: 1;
         @include ease-025s;
     }
-    &::before{
-        content: "";
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        top: 140px;
-        left: auto;
-        right: calc(100% + 40px);
-        background: var(--btn-filled-2);
-        @include ease-050s;
-        transform: rotate(70deg);
-        opacity: 0;
-    }
-    &::after{
-        content: "";
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        top: 140px;
-        left: auto;
-        right: calc(100% + 40px);
-        background: var(--btn-filled-1);
-        @include ease-100s;
-        transform: rotate(70deg);
-        opacity: 1;
-    }
+    
+    
     &:hover{
-        &::before{
-            content: "";
-            width:80px;
-            height: 80px;
-            position: absolute;
-            top: -40px;
-            left: 78%;
-            right: auto;
-            background: var(--btn-filled-2);
-            opacity: 1;
-        }
-        &::after{
-            content: "";
-            width: 80px;
-            height: 80px;
-            position: absolute;
-            top: -40px;
-            left: 78%;
-            right: auto;
-            background: var(--btn-filled-1);
-            opacity: 1;
-        }
-        .icon-control, .text{
-            //color: var(--font-default);
-        }
+        
     }
     &.disable{
         background: var(--gray-disable);
@@ -291,114 +163,7 @@
         @include ease-025s;
         margin-top: 2px;
     }
-    &::before{
-        content: "";
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        top: 140px;
-        left: auto;
-        right: calc(100% + 40px);
-        background: var(--btn-filled-2);
-        @include ease-050s;
-        transform: rotate(70deg);
-        opacity: 0;
-    }
-    &::after{
-        content: "";
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        top: 140px;
-        left: auto;
-        right: calc(100% + 40px);
-        background: var(--btn-filled-1);
-        @include ease-100s;
-        transform: rotate(70deg);
-        opacity: 1;
-    }
     &:hover{
-        &::before{
-            content: "";
-            width:80px;
-            height: 80px;
-            position: absolute;
-            top: -40px;
-            left: 78%;
-            right: auto;
-            background: var(--btn-filled-2);
-            opacity: 1;
-        }
-        &::after{
-            content: "";
-            width: 80px;
-            height: 80px;
-            position: absolute;
-            top: -40px;
-            left: 78%;
-            right: auto;
-            background: var(--btn-filled-1);
-            opacity: 1;
-        }
-        .icon-control, .text{
-            //color: var(--font-default);
-        }
-    }
-    &.disable{
-        background: var(--gray-disable);
-        pointer-events: none;
-        .outline{
-            outline: 0;
-        }
-        .text{
-            color: var(--white-100);
-        }
-    }
-}
-.style-3.outlined{
-    width: fit-content;
-    height: 40px;
-    padding:.25rem 0;
-    background: 0;
-    border:0;
-    .outline{
-        position: absolute;
-        width: 0%;
-        height: 100%;
-        bottom: 4px;
-        border-bottom: 1px solid var(--white-100);
-        @include ease-025s;
-        z-index: 2;
-        opacity: 1;
-    }
-    .text{
-        display: block;
-        font-size: 1rem;
-        font-weight: 400;
-        color:var(--white-100);
-        z-index: 1;
-        @include ease-025s;
-    }
-    .icon-control{
-        font-size: 1rem;
-        color:var(--white-100);
-        @include ease-025s;
-    }
-    .svg-box svg {
-        width: auto;
-        height: 16px;
-        fill: var(--white-100);
-        //stroke:var(--font-color-content);
-        @include ease-025s;
-        margin-top: 4px;
-    }
-    &:hover{
-        .icon-control, .text {
-            color:var(--white-100);
-        }
-        .outline{
-            width: 100%;
-        }
     }
     &.disable{
         background: var(--gray-disable);
@@ -412,85 +177,6 @@
     }
 }
 
-
-
-.onlyicon.style-1{
-    gap: 0;
-    position: relative;
-    width: 36px;
-    height: 36px;
-    align-items: center;
-    justify-content: center;
-    &::before{
-        position: absolute;
-        content: "";
-        outline: 1px solid var(--white-100);
-        outline-offset: -1px;
-        border-radius: 50%;
-        width:0%;
-        height: 30px;
-        opacity: 0;
-        @include ease-030s;
-        top: 4px;
-    }
-    &:hover::before{
-        width: 30px;
-        opacity: 1;
-        
-    }
-    .icon-control{
-        color: var(--white-100);
-        font-size: 16px;
-    }
-    .svg-box svg {
-        width: auto;
-        height: 16px;
-        fill: var(--white-100);
-        //stroke:var(--font-color-content);
-        @include ease-025s;
-        margin-top: 4px;
-    }
-    &.disable{
-        .icon-control{
-            color: var(--white-100);
-        }
-        pointer-events: none;
-    }
-}
-.onlyicon.style-2{
-    gap: 0;
-    position: relative;
-    width: 36px;
-    height: 36px;
-    align-items: center;
-    justify-content: center;
-    .icon-control{
-        color: var(--white-100);
-        font-size: 18px;
-        transform: scale(1);
-        &:hover{
-            color: var(--white-100);
-            transform: scale(1.2);
-            width: 100%;
-            opacity: 1;
-            @include ease-030s;
-        }
-    }
-    .svg-box svg {
-        width: auto;
-        height: 16px;
-        fill: var(--white-100);
-        //stroke:var(--font-color-content);
-        @include ease-025s;
-        margin-top: 4px;
-    }
-    &.disable{
-        .icon-control{
-            color: var(--gray-disable);
-        }
-        pointer-events: none;
-    }
-}
 .button-zone{
     width: 100%;
     height: fit-content;
@@ -500,11 +186,5 @@
     justify-content: end;
     gap: .75rem;
     margin-top: 3rem;
-}
-
-.go-back{
-    .icon-control{
-        transform: rotate(-90deg);
-    }
 }
 

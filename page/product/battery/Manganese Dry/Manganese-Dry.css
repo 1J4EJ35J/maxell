@@ -1,0 +1,4 @@
+.Manganese-Dry .table.style-1 .table-header .tr,
+.Manganese-Dry .table.style-1 .table-body .tr {
+  grid-template-columns: 160px repeat(3, 140px);
+}/*# sourceMappingURL=Manganese-Dry.css.map */
