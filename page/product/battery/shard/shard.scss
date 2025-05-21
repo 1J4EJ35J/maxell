@@ -10,7 +10,45 @@
         height: auto;
         object-fit: contain;
     }
+.tools-box {
+                display: flex;
+                gap: 1.5rem;
+                flex-direction: column;
+                margin-bottom: 1rem;
 
+                .download-btn {
+                    position: relative;
+                    width: fit-content;
+                    height: fit-content;
+                    display: grid;
+                    grid-template-columns: 24px 1fr;
+                    gap: 4px;
+                    font-size: 1.075rem;
+                    align-items: center;
+                    color: var(--font-color-content);
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 4px;
+                        left: 0%;
+                        width: 0%;
+                        height: 100%;
+                        border-bottom: 1px solid var(--gray-02);
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                        @include linear-030s;
+                        left: 0;
+                    }
+
+                    .icon-control {
+                        font-size: 1.5rem;
+                        color: var(--c-01-100);
+                    }
+                }
+            }
     .top-side {
         padding: 5rem 0 2rem 0;
         display: grid;
@@ -101,7 +139,8 @@
                 flex-direction: column;
                 gap: .5rem;
                 .item {
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: auto 1fr;
                     gap: .75rem;
 
                     .title,.text {
@@ -116,45 +155,7 @@
                 }
             }
 
-            .tools-box {
-                display: flex;
-                gap: 1.5rem;
-                flex-direction: column;
-                margin-bottom: 1rem;
-
-                .download-btn {
-                    position: relative;
-                    width: fit-content;
-                    height: fit-content;
-                    display: grid;
-                    grid-template-columns: 24px 1fr;
-                    gap: 4px;
-                    font-size: 1.075rem;
-                    align-items: center;
-                    color: var(--c-01-100);
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        top: 4px;
-                        left: 0%;
-                        width: 0%;
-                        height: 100%;
-                        border-bottom: 1px solid var(--c-01-100);
-                    }
-
-                    &:hover::after {
-                        width: 100%;
-                        @include linear-030s;
-                        left: 0;
-                    }
-
-                    .icon-control {
-                        font-size: 1.5rem;
-                        color: var(--c-01-100);
-                    }
-                }
-            }
+            
         }
     }
 

@@ -1,0 +1,4 @@
+.CR-Cylindrical-Lithium-Manganese-Dioxide .table.style-1 .table-header .tr,
+.CR-Cylindrical-Lithium-Manganese-Dioxide .table.style-1 .table-body .tr {
+  grid-template-columns: 240px repeat(2, 120px);
+}/*# sourceMappingURL=CR-Cylindrical-Lithium-Manganese-Dioxide.css.map */

@@ -9,6 +9,43 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+.bp-detail .tools-box {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.bp-detail .tools-box .download-btn {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 4px;
+  font-size: 1.075rem;
+  align-items: center;
+  color: var(--font-color-content);
+}
+.bp-detail .tools-box .download-btn::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  border-bottom: 1px solid var(--gray-02);
+}
+.bp-detail .tools-box .download-btn:hover::after {
+  width: 100%;
+  transition: all 0.3s linear;
+  left: 0;
+}
+.bp-detail .tools-box .download-btn .icon-control {
+  font-size: 1.5rem;
+  color: var(--c-01-100);
+}
 .bp-detail .top-side {
   padding: 5rem 0 2rem 0;
   display: grid;
@@ -83,7 +120,8 @@
   gap: 0.5rem;
 }
 .bp-detail .top-side .right-side .brief-box-list .item {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: 0.75rem;
 }
 .bp-detail .top-side .right-side .brief-box-list .item .title, .bp-detail .top-side .right-side .brief-box-list .item .text {
@@ -94,43 +132,6 @@
 .bp-detail .top-side .right-side .brief-box-list .item .title {
   margin-top: 0.5rem;
   color: var(--font-color-title);
-}
-.bp-detail .top-side .right-side .tools-box {
-  display: flex;
-  gap: 1.5rem;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-.bp-detail .top-side .right-side .tools-box .download-btn {
-  position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: grid;
-  grid-template-columns: 24px 1fr;
-  gap: 4px;
-  font-size: 1.075rem;
-  align-items: center;
-  color: var(--c-01-100);
-}
-.bp-detail .top-side .right-side .tools-box .download-btn::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 0%;
-  width: 0%;
-  height: 100%;
-  border-bottom: 1px solid var(--c-01-100);
-}
-.bp-detail .top-side .right-side .tools-box .download-btn:hover::after {
-  width: 100%;
-  transition: all 0.3s linear;
-  left: 0;
-}
-.bp-detail .top-side .right-side .tools-box .download-btn .icon-control {
-  font-size: 1.5rem;
-  color: var(--c-01-100);
 }
 .bp-detail .bottom-side {
   width: 100%;

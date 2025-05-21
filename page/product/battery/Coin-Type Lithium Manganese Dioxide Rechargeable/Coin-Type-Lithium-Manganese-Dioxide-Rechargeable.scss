@@ -1,0 +1,9 @@
+.Coin-Type-Lithium-Manganese-Dioxide-Rechargeable{
+    .table.style-1 .table-header .tr,
+    .table.style-1 .table-body .tr {
+        grid-template-columns: 240px repeat(2, 120px);
+    }
+    .tools-box{
+        //margin-top: 3rem;
+    }
+}
