@@ -162,11 +162,6 @@
             outline-offset: -3px;
             @include ease-025s;
 
-            &:hover {
-                //outline: 3px solid var(--c-dark-25t-100);
-                //background: var(--gray-01);
-            }
-
             &:last-of-type {
                 border-bottom: 0px solid var(--gray-02);
             }

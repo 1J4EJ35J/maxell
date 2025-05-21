@@ -77,10 +77,6 @@
         font-size: 1rem;
         color:var(--white-100);
     }
-    
-    &:hover{
-        
-    }
     &.disable{
         background: var(--gray-disable);
         pointer-events: none;
@@ -117,10 +113,6 @@
         @include ease-025s;
     }
     
-    
-    &:hover{
-        
-    }
     &.disable{
         background: var(--gray-disable);
         pointer-events: none;
