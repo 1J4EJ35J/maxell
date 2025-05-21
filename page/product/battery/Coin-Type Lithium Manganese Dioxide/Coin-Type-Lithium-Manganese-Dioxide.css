@@ -1,0 +1,4 @@
+.Coin-Type-Lithium-Manganese-Dioxide .table.style-1 .table-header .tr,
+.Coin-Type-Lithium-Manganese-Dioxide .table.style-1 .table-body .tr {
+  grid-template-columns: 240px repeat(9, 105px);
+}/*# sourceMappingURL=Coin-Type-Lithium-Manganese-Dioxide.css.map */
