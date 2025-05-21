@@ -1,0 +1,86 @@
+.philosophy {
+    display: grid;
+    grid-template-columns: 44% calc(56% - 2rem);
+    grid-template-rows: 1fr;
+    gap: 2rem;
+
+    .left-side {
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        .img-container,
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 4rem;
+
+        .title-box {
+            .title {
+                color: var(--c-01-100);
+            }
+
+            .wi-title {
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: fit-content;
+                gap: 2rem;
+
+                .svg-box {
+                    position: absolute;
+                    bottom: 8px;
+                    left: 124px;
+                }
+
+                .the {
+                    padding-left: 1rem;
+                }
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                gap: .75rem;
+            }
+
+            .small-title {
+                color: var(--c-dark-20t-100);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .philosophy {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+
+    }
+    .philosophy .right-side .title-box .wi-title .svg-box{
+        left: 108px;
+    }
+}
+@media screen and (max-width: 375px) {
+.philosophy .right-side .title-box .wi-title .svg-box{
+        left: 100px;
+    }
+    .philosophy .right-side .title-box .wi-title p{
+        font-size: 2.25rem;
+    }
+}
