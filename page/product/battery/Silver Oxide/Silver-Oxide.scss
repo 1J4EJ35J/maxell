@@ -1,0 +1,25 @@
+.Silver-Oxide {
+
+    .table.style-1 .table-header .tr,
+    .table.style-1 .table-body .tr {
+        grid-template-columns: 130px 115px 280px repeat(5, 130px);
+    }
+
+    .table.style-1 .table-body .tr {
+        border-bottom: 0;
+
+        &:nth-of-type(13) {
+            .th {
+                border-bottom: 1px solid var(--gray-02);
+            }
+
+        }
+
+
+        .td {
+            border-bottom: 1px solid var(--gray-02);
+        }
+
+
+    }
+}

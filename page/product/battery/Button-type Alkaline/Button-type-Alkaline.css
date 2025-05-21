@@ -1,0 +1,4 @@
+.Button-type-Alkaline .table.style-1 .table-header .tr,
+.Button-type-Alkaline .table.style-1 .table-body .tr {
+  grid-template-columns: 240px repeat(4, 130px);
+}/*# sourceMappingURL=Button-type-Alkaline.css.map */

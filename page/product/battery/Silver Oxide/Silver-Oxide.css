@@ -1,1 +1,13 @@
-/*# sourceMappingURL=Silver-Oxide.css.map */
+.Silver-Oxide .table.style-1 .table-header .tr,
+.Silver-Oxide .table.style-1 .table-body .tr {
+  grid-template-columns: 130px 115px 280px repeat(5, 130px);
+}
+.Silver-Oxide .table.style-1 .table-body .tr {
+  border-bottom: 0;
+}
+.Silver-Oxide .table.style-1 .table-body .tr:nth-of-type(13) .th {
+  border-bottom: 1px solid var(--gray-02);
+}
+.Silver-Oxide .table.style-1 .table-body .tr .td {
+  border-bottom: 1px solid var(--gray-02);
+}/*# sourceMappingURL=Silver-Oxide.css.map */

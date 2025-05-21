@@ -126,56 +126,66 @@
         pointer-events: none;
     }
 }
-.style-2.outlined{
-    width: fit-content;
-    height: 35px;
-    padding: 0rem .75rem;
-    background: 0;
-    border:0;
-    .outline{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        outline-offset: -2px;
-        outline: 1px solid var(--c-dark-50t-100);
-        @include ease-025s;
-        z-index: 2;
-        opacity: .4;
-    }
-    .text{
-        display: block;
-        font-size: .9rem;
-        font-weight: 400;
-        color:var(--white-100);
-        z-index: 1;
-        @include ease-025s;
-    }
-    .icon-control{
-        height: fit-content;
-        font-size: 20px;
-        color:var(--white-100);
-    }
-    .svg-box svg {
-        width: auto;
-        height: 16px;
-        fill: var(--white-100);
-        //stroke:var(--font-color-content);
-        @include ease-025s;
-        margin-top: 2px;
-    }
-    &:hover{
-    }
-    &.disable{
-        background: var(--gray-disable);
-        pointer-events: none;
-        .outline{
-            outline: 0;
-        }
-        .text{
-            color: var(--white-100);
-        }
-    }
-}
+.style-2.outlined {
+                    width: fit-content;
+                    height: 35px;
+                    padding: 0rem 4px;
+                    background: 0;
+                    border: 0;
+                    gap: 4px;
+                    .outline {
+                        position: absolute;
+                        width: 0;
+                        height: 100%;
+                        border-bottom: 1px solid var(--gray-02);
+                        @include ease-025s;
+                        z-index: 2;
+                        opacity: .4;
+                    }
+
+                    .text {
+                        display: block;
+                        font-size: .9rem;
+                        font-weight: 400;
+                        color: var(--font-color-content);
+                        z-index: 1;
+                        @include ease-025s;
+                    }
+
+                    .icon-control {
+                        height: fit-content;
+                        font-size: 20px;
+                        color: var(--c-01-100);
+                    }
+
+                    .svg-box svg {
+                        width: auto;
+                        height: 16px;
+                        fill: var(--white-100);
+                        //stroke:var(--font-color-content);
+                        @include ease-025s;
+                        margin-top: 2px;
+                    }
+
+                    &:hover {
+                        .outline{
+                            width: 100%;
+                        } 
+                    }
+
+                    &.disable {
+                        background: var(--gray-disable);
+                        pointer-events: none;
+
+                        .outline {
+                            outline: 0;
+                        }
+
+                        .text {
+                            color: var(--white-100);
+                        }
+                    }
+                }
 
 .button-zone{
     width: 100%;

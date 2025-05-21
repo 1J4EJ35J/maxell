@@ -1,0 +1,10 @@
+.CR-Heat-Resistant-Lithium-Manganese-Dioxide {
+
+    .table.style-1 .table-header .tr,
+    .table.style-1 .table-body .tr {
+        grid-template-columns: 240px repeat(3, 140px) 214px;
+    }
+    .text.note{
+        color: var(--c-01-100);
+    }
+}

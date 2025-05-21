@@ -123,16 +123,16 @@
   width: -moz-fit-content;
   width: fit-content;
   height: 35px;
-  padding: 0rem 0.75rem;
+  padding: 0rem 4px;
   background: 0;
   border: 0;
+  gap: 4px;
 }
 .style-2.outlined .outline {
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 100%;
-  outline-offset: -2px;
-  outline: 1px solid var(--c-dark-50t-100);
+  border-bottom: 1px solid var(--gray-02);
   transition: all 0.25s ease;
   z-index: 2;
   opacity: 0.4;
@@ -141,7 +141,7 @@
   display: block;
   font-size: 0.9rem;
   font-weight: 400;
-  color: var(--white-100);
+  color: var(--font-color-content);
   z-index: 1;
   transition: all 0.25s ease;
 }
@@ -149,7 +149,7 @@
   height: -moz-fit-content;
   height: fit-content;
   font-size: 20px;
-  color: var(--white-100);
+  color: var(--c-01-100);
 }
 .style-2.outlined .svg-box svg {
   width: auto;
@@ -157,6 +157,9 @@
   fill: var(--white-100);
   transition: all 0.25s ease;
   margin-top: 2px;
+}
+.style-2.outlined:hover .outline {
+  width: 100%;
 }
 .style-2.outlined.disable {
   background: var(--gray-disable);
