@@ -1,0 +1,34 @@
+//policy-shard
+.policy-shard{
+    .-cr{
+        color: var(--c-01-100);
+    }
+    .pd{
+        &-10{
+            padding-bottom: 1.0rem;
+        }
+        &-15{
+            padding-bottom: 1.5rem;
+        }
+        &-20{
+            padding-bottom: 2.0rem;
+        }
+        &-25{
+            padding-bottom: 2.5rem;
+        }
+        &-30{
+            padding-bottom: 3.0rem;
+        }
+        &-35{
+            padding-bottom: 3.5rem;
+        }
+        &-40{
+            padding-bottom: 4.0rem;
+        }
+    }
+    .item{
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        gap: 8px;
+    }
+}

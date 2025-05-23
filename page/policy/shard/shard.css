@@ -1,0 +1,29 @@
+.policy-shard .-cr {
+  color: var(--c-01-100);
+}
+.policy-shard .pd-10 {
+  padding-bottom: 1rem;
+}
+.policy-shard .pd-15 {
+  padding-bottom: 1.5rem;
+}
+.policy-shard .pd-20 {
+  padding-bottom: 2rem;
+}
+.policy-shard .pd-25 {
+  padding-bottom: 2.5rem;
+}
+.policy-shard .pd-30 {
+  padding-bottom: 3rem;
+}
+.policy-shard .pd-35 {
+  padding-bottom: 3.5rem;
+}
+.policy-shard .pd-40 {
+  padding-bottom: 4rem;
+}
+.policy-shard .item {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 8px;
+}/*# sourceMappingURL=shard.css.map */

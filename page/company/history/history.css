@@ -1,0 +1,54 @@
+.history {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 3rem;
+}
+.history .title-box .title {
+  color: var(--c-01-100);
+}
+.history .zone .container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: calc(68px + 1rem) 1fr;
+  gap: 24px;
+}
+.history .zone .container .year {
+  padding: 0 8px;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 68px 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+.history .zone .container .year .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 2px solid var(--c-01-100);
+}
+.history .zone .container .year .circle .text {
+  position: absolute;
+  margin-top: -4px;
+}
+.history .zone .container .year .line {
+  width: 1px;
+  height: 100%;
+  min-height: 48px;
+  background: var(--c-01-100);
+}
+.history .zone .container .list {
+  display: flex;
+  gap: 1rem;
+  padding: 24px 0 24px 12px;
+  flex-direction: column;
+}/*# sourceMappingURL=history.css.map */

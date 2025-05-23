@@ -1,0 +1,74 @@
+.information {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.25rem;
+}
+.information .top-side .svg-box {
+  width: 400px;
+  height: auto;
+}
+.information .top-side .svg-box svg {
+  width: 100%;
+  height: 100%;
+}
+.information .bottom-side {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.information .bottom-side .title-box .title {
+  color: var(--c-01-100);
+}
+.information .bottom-side .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.25rem;
+}
+.information .bottom-side .wrapper .container {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: start;
+  gap: 1rem;
+}
+.information .bottom-side .wrapper .container .icon-control {
+  color: var(--c-01-100);
+  font-size: 1.75rem;
+  margin-top: 0.15rem;
+}
+.information .bottom-side .wrapper .container .box {
+  display: flex;
+  flex-direction: column;
+}
+.information .bottom-side .wrapper .container .box .title {
+  color: var(--c-dark-50t-100);
+}
+.information .bottom-side .wrapper .container .box .text {
+  color: var(--c-dark-20t-100);
+}
+.information .bottom-side .wrapper .container .svg-box,
+.information .bottom-side .wrapper .container svg {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .information .top-side .svg-box {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .information .bottom-side .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .information .top-side .svg-box {
+    width: 280px;
+  }
+}/*# sourceMappingURL=information.css.map */

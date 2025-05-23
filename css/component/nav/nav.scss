@@ -41,7 +41,7 @@
             gap: 3rem;
             padding-left: 1.5rem;
             height: 100%;
-
+            background: var(--white-100);
             .nav-menu-container {
                 position: relative;
                 height: 100%;
@@ -147,7 +147,7 @@
         display: none;
 
         .icon-control {
-            font-size: 1.25rem;
+            font-size: 1.65rem;
             cursor: pointer;
             padding: .75rem;
         }
@@ -199,7 +199,7 @@
     .nav-top .left-side .nav-menu-zone .nav-menu-container{
         width: 100%;
         height: fit-content;
-        padding: .75rem 0 .75rem 1.5rem;
+        padding: 1rem 0 1rem 1.5rem;
         &:hover{
             .nav-menu-dropdown-list{
                 display: none;
@@ -216,6 +216,8 @@
     }
     .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-title .title {
         align-self: flex-start;
+        font-size: 1.25rem;
+        font-weight: 400;
     }
     .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-dropdown-list{
         position: relative;
@@ -224,5 +226,9 @@
         width: 100%;
         box-shadow: none;
         
+    }
+    .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-dropdown-list .nav-menu-dropdown-option a.text {
+        font-size: 1.25rem;
+        color: var(--gray-03);
     }
 }
