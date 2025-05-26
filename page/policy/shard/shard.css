@@ -52,7 +52,12 @@
   gap: 8px;
 }
 .policy-shard .block {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin-top: 3rem;
   padding: 1rem;
+  background: var(--gray-01);
 }
 .policy-shard .block .box {
   display: flex;

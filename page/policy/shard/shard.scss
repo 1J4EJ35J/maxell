@@ -58,7 +58,12 @@
         gap: 8px;
     }
     .block{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 3rem;
         padding:1rem;
+        background: var(--gray-01);
         .box{
             display: flex;
             align-items: center;
@@ -66,4 +71,5 @@
         }
 
     }
+    
 }

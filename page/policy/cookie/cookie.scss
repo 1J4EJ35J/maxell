@@ -1,1 +1,14 @@
- 
+ .cookie {
+     .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--c-dark-70t-100);
+     }
+     .operation-list{
+        display: grid;
+        grid-template-columns: 12px 1fr;
+        align-items: center;
+        gap: .35rem;
+     }
+ }

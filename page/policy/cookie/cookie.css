@@ -1,1 +1,12 @@
-/*# sourceMappingURL=cookie.css.map */
+.cookie .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c-dark-70t-100);
+}
+.cookie .operation-list {
+  display: grid;
+  grid-template-columns: 12px 1fr;
+  align-items: center;
+  gap: 0.35rem;
+}/*# sourceMappingURL=cookie.css.map */
