@@ -14,21 +14,21 @@
 
 input::placeholder {
     font-size: 0.875rem;
-    color: var(--c-dark-30t-100);
+    color: var(--gray-02);
 }
 
 input:read-only {
     border-color: transparent;
-    color: var(--c-dark-30t-100);
+    color: var(--gray-02);
 }
 
 .input.style-1 {
-    outline: 1px solid var(--c-dark-30t-100);
+    outline: 1px solid var(--gray-02);
     outline-offset: -1px;
 }
 
 .input.style-1.disable {
-    outline: 0px solid var(--c-dark-30t-100);
+    outline: 0px solid var(--gray-02);
     pointer-events: none;
 }
 
@@ -39,7 +39,7 @@ input::placeholder {
 }
 
 .input.style-2 {
-    outline: 0px solid var(--c-dark-30t-100);
+    outline: 0px solid var(--gray-02);
     outline-offset: 0px;
     //background: var(--white-100);
 }
@@ -87,7 +87,7 @@ input:focus {
     .terms-text {
         cursor: pointer;
         color: var(--c-1st-100);
-        border-bottom: 1px solid var(--c-dark-30t-100);
+        border-bottom: 1px solid var(--gray-02);
     }
 
     span,
@@ -102,7 +102,7 @@ input:focus {
         width: 24px;
         height: 24px;
         background: transparent;
-        border: 1px solid var(--c-dark-30t-100);
+        border: 1px solid var(--gray-02);
         border-radius: 0;
         display: flex;
         align-items: center;
@@ -148,7 +148,7 @@ input:focus {
         width: 14px;
         height: 14px;
         background: transparent;
-        border: 1px solid var(--c-dark-30t-100);
+        border: 1px solid var(--gray-02);
         border-radius: 3px;
         display: flex;
         align-items: center;
@@ -187,7 +187,7 @@ input:focus {
     }
 
     input:read-only {
-        border-color: var(--c-dark-30t-100);
+        border-color: var(--gray-02);
     }
 }
 
@@ -210,7 +210,7 @@ input:focus {
         //margin-top: 2px;
         appearance: none;
         background-color: transparent;
-        border: 1px solid var(--c-dark-30t-100);
+        border: 1px solid var(--gray-02);
         border-radius: 0%;
         position: relative;
         outline: none;
@@ -254,7 +254,7 @@ input:focus {
         justify-content: flex-end;
         width: 48px;
         height: 24px;
-        border: 1px solid var(--c-dark-30t-100);
+        border: 1px solid var(--gray-02);
         border-radius: 0;
         cursor: pointer;
 
@@ -343,7 +343,7 @@ input:focus {
         justify-content: flex-end;
         width: 56px;
         height: 28px;
-        border: 1px solid var(--c-dark-30t-100);
+        border: 1px solid var(--gray-02);
         border-radius: 0;
         cursor: pointer;
 
@@ -487,20 +487,20 @@ input:focus {
         .input {
             outline: 0px;
             border-radius: .5rem;
-            border-top: 1px solid var(--c-dark-30t-100);
-            border-right: 1px solid var(--c-dark-30t-100);
-            border-bottom: 1px solid var(--c-dark-30t-100);
-            border-left: 1px solid var(--c-dark-30t-100);
+            border-top: 1px solid var(--gray-02);
+            border-right: 1px solid var(--gray-02);
+            border-bottom: 1px solid var(--gray-02);
+            border-left: 1px solid var(--gray-02);
         }
 
         .button {
             min-width: 56px;
             height: 40px;
             border-radius: 0 .5rem .5rem 0;
-            border-right: 1px solid var(--c-dark-30t-100);
-            border-top: 1px solid var(--c-dark-30t-100);
-            border-bottom: 1px solid var(--c-dark-30t-100);
-            border-left: 1px solid var(--c-dark-30t-100);
+            border-right: 1px solid var(--gray-02);
+            border-top: 1px solid var(--gray-02);
+            border-bottom: 1px solid var(--gray-02);
+            border-left: 1px solid var(--gray-02);
             outline: 0;
             position: absolute;
             right: 0;
@@ -552,7 +552,7 @@ input:focus {
                 outline: none;
                 border: none;
                 background: transparent;
-                border: 1px solid var(--c-dark-30t-100);
+                border: 1px solid var(--gray-02);
 
                 &:focus {
                     outline: none;
@@ -569,7 +569,7 @@ input:focus {
 
     .char-counter {
         text-align: right;
-        color: var(--c-dark-30t-100);
+        color: var(--gray-02);
     }
 
     .error-container {
@@ -817,7 +817,7 @@ input:focus {
         align-items: center;
         gap: 0px;
         outline: 1px solid var(--gray-2nd);
-        //border-bottom: 1px solid var(--c-dark-30t-100);
+        //border-bottom: 1px solid var(--gray-02);
         width: 100%;
 
         .input {
@@ -873,7 +873,7 @@ input:focus {
     display: flex;
     align-items: center;
     gap: 0;
-    border: 1px solid var(--c-dark-30t-100);
+    border: 1px solid var(--gray-02);
     border-radius: .5rem;
 
     .calendar-container {
@@ -902,7 +902,7 @@ input:focus {
     .button.sixth {
         outline: 0;
         border-radius: 0;
-        border-left: 1px solid var(--c-dark-30t-100);
+        border-left: 1px solid var(--gray-02);
         background: transparent;
     }
 }
@@ -928,7 +928,7 @@ input:focus {
     align-items: center;
     height: fit-content;
     width: fit-content;
-    border: 1px solid var(--c-dark-30t-100);
+    border: 1px solid var(--gray-02);
     border-radius: .5rem;
 
     .input.style-1 {
@@ -973,7 +973,7 @@ input:focus {
 
     .select-outline-box {
         padding-left: .5rem;
-        outline: 1px solid var(--c-dark-30t-100);
+        outline: 1px solid var(--gray-02);
         outline-offset: -1px;
         height: 40px;
         position: relative;
@@ -1019,7 +1019,7 @@ input:focus {
 
     .select-list {
         display: none;
-        outline: 1px solid var(--c-dark-30t-100);
+        outline: 1px solid var(--gray-02);
         outline-offset: -1px;
         position: relative;
         height: 0;
@@ -1093,7 +1093,7 @@ input:focus {
 
     .select-outline-box {
         padding-left: .5rem;
-        outline: 1px solid var(--c-dark-30t-100);
+        outline: 1px solid var(--gray-02);
         outline-offset: -1px;
         height: 40px;
         position: relative;
@@ -1140,7 +1140,7 @@ input:focus {
 
     .select-list {
         display: none;
-        outline: 1px solid var(--c-dark-30t-100);
+        outline: 1px solid var(--gray-02);
         outline-offset: -1px;
         position: relative;
         height: 0;
@@ -1200,7 +1200,7 @@ input:focus {
 }
 
 .select.disable {
-    border: 0px solid var(--c-dark-30t-100);
+    border: 0px solid var(--gray-02);
     pointer-events: none;
     background: 0;
     background-size: 0px;

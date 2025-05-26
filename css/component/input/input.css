@@ -12,31 +12,31 @@
 
 input::-moz-placeholder {
   font-size: 0.875rem;
-  color: var(--c-dark-30t-100);
+  color: var(--gray-02);
 }
 
 input::placeholder {
   font-size: 0.875rem;
-  color: var(--c-dark-30t-100);
+  color: var(--gray-02);
 }
 
 input:-moz-read-only {
   border-color: transparent;
-  color: var(--c-dark-30t-100);
+  color: var(--gray-02);
 }
 
 input:read-only {
   border-color: transparent;
-  color: var(--c-dark-30t-100);
+  color: var(--gray-02);
 }
 
 .input.style-1 {
-  outline: 1px solid var(--c-dark-30t-100);
+  outline: 1px solid var(--gray-02);
   outline-offset: -1px;
 }
 
 .input.style-1.disable {
-  outline: 0px solid var(--c-dark-30t-100);
+  outline: 0px solid var(--gray-02);
   pointer-events: none;
 }
 
@@ -53,7 +53,7 @@ input::placeholder {
 }
 
 .input.style-2 {
-  outline: 0px solid var(--c-dark-30t-100);
+  outline: 0px solid var(--gray-02);
   outline-offset: 0px;
 }
 
@@ -98,7 +98,7 @@ input:focus {
 .checkbox.style-1 .terms-text {
   cursor: pointer;
   color: var(--c-1st-100);
-  border-bottom: 1px solid var(--c-dark-30t-100);
+  border-bottom: 1px solid var(--gray-02);
 }
 .checkbox.style-1 span,
 .checkbox.style-1 .text {
@@ -113,7 +113,7 @@ input:focus {
   width: 24px;
   height: 24px;
   background: transparent;
-  border: 1px solid var(--c-dark-30t-100);
+  border: 1px solid var(--gray-02);
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -154,7 +154,7 @@ input:focus {
   width: 14px;
   height: 14px;
   background: transparent;
-  border: 1px solid var(--c-dark-30t-100);
+  border: 1px solid var(--gray-02);
   border-radius: 3px;
   display: flex;
   align-items: center;
@@ -189,10 +189,10 @@ input:focus {
   font-size: 1rem;
 }
 .radio-box input:-moz-read-only {
-  border-color: var(--c-dark-30t-100);
+  border-color: var(--gray-02);
 }
 .radio-box input:read-only {
-  border-color: var(--c-dark-30t-100);
+  border-color: var(--gray-02);
 }
 
 .radio.style-1 {
@@ -215,7 +215,7 @@ input:focus {
      -moz-appearance: none;
           appearance: none;
   background-color: transparent;
-  border: 1px solid var(--c-dark-30t-100);
+  border: 1px solid var(--gray-02);
   border-radius: 0%;
   position: relative;
   outline: none;
@@ -257,7 +257,7 @@ input:focus {
   justify-content: flex-end;
   width: 48px;
   height: 24px;
-  border: 1px solid var(--c-dark-30t-100);
+  border: 1px solid var(--gray-02);
   border-radius: 0;
   cursor: pointer;
 }
@@ -335,7 +335,7 @@ input:focus {
   justify-content: flex-end;
   width: 56px;
   height: 28px;
-  border: 1px solid var(--c-dark-30t-100);
+  border: 1px solid var(--gray-02);
   border-radius: 0;
   cursor: pointer;
 }
@@ -485,10 +485,10 @@ input:focus {
 .checkbox-container.merge-button .input {
   outline: 0px;
   border-radius: 0.5rem;
-  border-top: 1px solid var(--c-dark-30t-100);
-  border-right: 1px solid var(--c-dark-30t-100);
-  border-bottom: 1px solid var(--c-dark-30t-100);
-  border-left: 1px solid var(--c-dark-30t-100);
+  border-top: 1px solid var(--gray-02);
+  border-right: 1px solid var(--gray-02);
+  border-bottom: 1px solid var(--gray-02);
+  border-left: 1px solid var(--gray-02);
 }
 .input-container.merge-button .button,
 .select-container.merge-button .button,
@@ -497,10 +497,10 @@ input:focus {
   min-width: 56px;
   height: 40px;
   border-radius: 0 0.5rem 0.5rem 0;
-  border-right: 1px solid var(--c-dark-30t-100);
-  border-top: 1px solid var(--c-dark-30t-100);
-  border-bottom: 1px solid var(--c-dark-30t-100);
-  border-left: 1px solid var(--c-dark-30t-100);
+  border-right: 1px solid var(--gray-02);
+  border-top: 1px solid var(--gray-02);
+  border-bottom: 1px solid var(--gray-02);
+  border-left: 1px solid var(--gray-02);
   outline: 0;
   position: absolute;
   right: 0;
@@ -550,7 +550,7 @@ input:focus {
   outline: none;
   border: none;
   background: transparent;
-  border: 1px solid var(--c-dark-30t-100);
+  border: 1px solid var(--gray-02);
 }
 .text-area-zone.style-1 .text-area-container .text-area:focus {
   outline: none;
@@ -567,7 +567,7 @@ input:focus {
 }
 .text-area-zone .char-counter {
   text-align: right;
-  color: var(--c-dark-30t-100);
+  color: var(--gray-02);
 }
 .text-area-zone .error-container {
   position: absolute;
@@ -819,7 +819,7 @@ input:focus {
   display: flex;
   align-items: center;
   gap: 0;
-  border: 1px solid var(--c-dark-30t-100);
+  border: 1px solid var(--gray-02);
   border-radius: 0.5rem;
 }
 .search-merge-time-zone .calendar-container {
@@ -844,7 +844,7 @@ input:focus {
 .search-merge-time-zone .button.sixth {
   outline: 0;
   border-radius: 0;
-  border-left: 1px solid var(--c-dark-30t-100);
+  border-left: 1px solid var(--gray-02);
   background: transparent;
 }
 
@@ -869,7 +869,7 @@ input:focus {
   height: fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border: 1px solid var(--c-dark-30t-100);
+  border: 1px solid var(--gray-02);
   border-radius: 0.5rem;
 }
 .unit-inside-input .input.style-1 {
@@ -906,7 +906,7 @@ input:focus {
 }
 .select.style-1 .select-outline-box {
   padding-left: 0.5rem;
-  outline: 1px solid var(--c-dark-30t-100);
+  outline: 1px solid var(--gray-02);
   outline-offset: -1px;
   height: 40px;
   position: relative;
@@ -944,7 +944,7 @@ input:focus {
 }
 .select.style-1 .select-list {
   display: none;
-  outline: 1px solid var(--c-dark-30t-100);
+  outline: 1px solid var(--gray-02);
   outline-offset: -1px;
   position: relative;
   height: 0;
@@ -1006,7 +1006,7 @@ input:focus {
 }
 .select.style-2 .select-outline-box {
   padding-left: 0.5rem;
-  outline: 1px solid var(--c-dark-30t-100);
+  outline: 1px solid var(--gray-02);
   outline-offset: -1px;
   height: 40px;
   position: relative;
@@ -1045,7 +1045,7 @@ input:focus {
 }
 .select.style-2 .select-list {
   display: none;
-  outline: 1px solid var(--c-dark-30t-100);
+  outline: 1px solid var(--gray-02);
   outline-offset: -1px;
   position: relative;
   height: 0;
@@ -1094,7 +1094,7 @@ input:focus {
 }
 
 .select.disable {
-  border: 0px solid var(--c-dark-30t-100);
+  border: 0px solid var(--gray-02);
   pointer-events: none;
   background: 0;
   background-size: 0px;

@@ -1,9 +1,3 @@
-.policy-shard .-cr {
-  color: var(--c-01-100);
-}
-.policy-shard .-cb {
-  color: var(--font-color-title);
-}
 .policy-shard .pt-10 {
   padding-top: 1rem;
 }

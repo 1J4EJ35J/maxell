@@ -59,11 +59,21 @@ ol {
 .-s-padding-b {
     padding-bottom: 5rem;
 }
+
 .-pt {
     padding-top: 0 !important;
 }
+
 .-pb {
     padding-bottom: 0 !important;
+}
+
+.-cr {
+    color: var(--c-01-100);
+}
+
+.-cb {
+    color: var(--font-color-title);
 }
 
 @media screen and (max-width: 1280px) {
@@ -83,12 +93,12 @@ ol {
         padding-right: 15px;
     }
 
-    
-    .-s-padding-t {
-    padding-top: 40px;
-}
 
-.-s-padding-b {
-    padding-bottom: 40px;
-}
+    .-s-padding-t {
+        padding-top: 40px;
+    }
+
+    .-s-padding-b {
+        padding-bottom: 40px;
+    }
 }
