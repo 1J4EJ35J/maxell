@@ -1,6 +1,30 @@
 .policy-shard .-cr {
   color: var(--c-01-100);
 }
+.policy-shard .-cb {
+  color: var(--font-color-title);
+}
+.policy-shard .pt-10 {
+  padding-top: 1rem;
+}
+.policy-shard .pt-15 {
+  padding-top: 1.5rem;
+}
+.policy-shard .pt-20 {
+  padding-top: 2rem;
+}
+.policy-shard .pt-25 {
+  padding-top: 2.5rem;
+}
+.policy-shard .pt-30 {
+  padding-top: 3rem;
+}
+.policy-shard .pt-35 {
+  padding-top: 3.5rem;
+}
+.policy-shard .pt-40 {
+  padding-top: 4rem;
+}
 .policy-shard .pd-10 {
   padding-bottom: 1rem;
 }
@@ -24,6 +48,14 @@
 }
 .policy-shard .item {
   display: grid;
-  grid-template-columns: 20px 1fr;
+  grid-template-columns: 16px 1fr;
   gap: 8px;
+}
+.policy-shard .block {
+  padding: 1rem;
+}
+.policy-shard .block .box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }/*# sourceMappingURL=shard.css.map */

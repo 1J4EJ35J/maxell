@@ -29,4 +29,15 @@
 .-triangle-3 svg {
   width: 100%;
   height: auto;
+}
+
+.-triangle-4 {
+  width: 9px;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translateY(0px);
+}
+.-triangle-4 svg {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=Triangle.css.map */
