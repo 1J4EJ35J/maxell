@@ -60,23 +60,33 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  outline-offset: -2px;
+  outline-offset: -1px;
   outline: 1px solid var(--c-dark-50t-100);
   transition: all 0.25s ease;
   z-index: 2;
   opacity: 0.4;
+  border-radius: 0.35rem;
+  border: 2px solid transparent;
 }
 .style-1.outlined .text {
   display: block;
   font-size: 1rem;
   font-weight: 400;
-  color: var(--white-100);
+  color: var(--font-color-content);
   z-index: 1;
   transition: all 0.25s ease;
+  opacity: 0.6;
 }
 .style-1.outlined .icon-control {
   font-size: 1rem;
   color: var(--white-100);
+}
+.style-1.outlined:hover .outline {
+  outline: 1px solid transparent;
+  border: 2px solid var(--c-dark-50t-100);
+}
+.style-1.outlined:hover .text {
+  opacity: 1;
 }
 .style-1.outlined.disable {
   background: var(--gray-disable);
