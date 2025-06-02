@@ -78,15 +78,19 @@
     }
     .icon-control{
         font-size: 1rem;
-        color:var(--white-100);
+        color:var(--font-color-content);
+        opacity: .6;
+        @include ease-025s;
     }
     &:hover{
         .outline{
-            
             outline: 1px solid transparent;
             border: 2px solid var(--c-dark-50t-100);
         }
         .text{
+            opacity: 1;
+        }
+        .icon-control{
             opacity: 1;
         }
     }

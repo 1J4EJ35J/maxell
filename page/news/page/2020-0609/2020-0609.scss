@@ -1,0 +1,6 @@
+.y2020-0609{
+    .table.style-1 .table-header .tr,
+    .table.style-1 .table-body .tr{
+        grid-template-columns: 160px repeat(3, 120px) 160px;
+    }
+}

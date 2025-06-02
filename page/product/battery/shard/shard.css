@@ -124,7 +124,8 @@
   grid-template-columns: auto 1fr;
   gap: 0.75rem;
 }
-.bp-detail .top-side .right-side .brief-box-list .item .title, .bp-detail .top-side .right-side .brief-box-list .item .text {
+.bp-detail .top-side .right-side .brief-box-list .item .title,
+.bp-detail .top-side .right-side .brief-box-list .item .text {
   font-size: 1.075rem;
   font-weight: 400;
   color: var(--font-color-content);

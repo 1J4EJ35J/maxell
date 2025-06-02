@@ -79,13 +79,18 @@
 }
 .style-1.outlined .icon-control {
   font-size: 1rem;
-  color: var(--white-100);
+  color: var(--font-color-content);
+  opacity: 0.6;
+  transition: all 0.25s ease;
 }
 .style-1.outlined:hover .outline {
   outline: 1px solid transparent;
   border: 2px solid var(--c-dark-50t-100);
 }
 .style-1.outlined:hover .text {
+  opacity: 1;
+}
+.style-1.outlined:hover .icon-control {
   opacity: 1;
 }
 .style-1.outlined.disable {

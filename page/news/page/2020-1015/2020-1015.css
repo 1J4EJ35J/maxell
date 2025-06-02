@@ -1,0 +1,4 @@
+.y2020-1015 .table.style-1 .table-header .tr,
+.y2020-1015 .table.style-1 .table-body .tr {
+  grid-template-columns: repeat(4, 120px);
+}/*# sourceMappingURL=2020-1015.css.map */
