@@ -1,0 +1,4 @@
+.y2018-0329 .table.style-1 .table-header .tr,
+.y2018-0329 .table.style-1 .table-body .tr {
+  grid-template-columns: 100px repeat(2, minmax(200px, 1fr));
+}/*# sourceMappingURL=2018-0329.css.map */

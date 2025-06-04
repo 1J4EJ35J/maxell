@@ -9,7 +9,7 @@ body {
 }
 
 .font-size-3xl {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 .font-size-2xl {
@@ -74,6 +74,7 @@ html {
 
 @media (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 14.8px;
   }
+  
 }
