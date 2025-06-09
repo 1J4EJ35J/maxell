@@ -40,7 +40,7 @@ customElements.define('nav-top', class extends HTMLElement {
                             </svg>
                         </div>
                     </div>
-                    <div class="nav-menu-zone">
+                    <div class="nav-menu-zone scroll-box-1">
                         <div class="nav-menu-container">
                             <div class="nav-menu-title">
                                 <h4 class="title">商品情報</h4>
@@ -52,29 +52,21 @@ customElements.define('nav-top', class extends HTMLElement {
                             </div>
                             <ul class="nav-menu-dropdown-list">
                                 <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">Optical</a>
+                                    <a href="https://biz.maxell.com/en/lens_unit/" class="text">Optical</a>
                                 </li>
                                 <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">Electroforming</a>
+                                    <a href="https://biz.maxell.com/en/electroforming/" class="text">Electroforming</a>
                                 </li>
                                 <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">Battery products</a>
+                                    <a href="/page/product/battery/battery-overview.html" class="text">Battery products</a>
                                 </li>
                                 <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">Functional Materials</a>
+                                    <a href="https://biz.maxell.com/en/adhesive_tapes_inks_functional_films/" class="text">Functional Materials</a>
                                 </li>
+                                
                                 <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">Consumer Products</a>
-                                </li>
-                                <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">Disc Media</a>
+                                    <a href="/page/product/disc-overview/disc-overview.html" class="text">Disc Media</a>
                                 </li> 
-                                <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">Projector</a>
-                                </li>
-                                <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">Lecture Capture Station</a>
-                                </li>
                             </ul>
                         </div>
                         <a href="" class="nav-menu-container">
@@ -93,17 +85,17 @@ customElements.define('nav-top', class extends HTMLElement {
                             </div>
                             <ul class="nav-menu-dropdown-list">
                                 <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">企業理念</a>
+                                    <a href="/page/company/philosophy/philosophy.html" class="text">企業理念</a>
                                 </li>
                                 <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">公司概要</a>
+                                    <a href="/page/company/information/information.html" class="text">公司概要</a>
                                 </li>
                                 <li class="nav-menu-dropdown-option">
-                                    <a href="" class="text">沿革</a>
+                                    <a href="/page/company/history/history.html" class="text">沿革</a>
                                 </li>
                             </ul>
                         </div>
-                        <a href="" class="nav-menu-container">
+                        <a href="/page/contact/contact.html" class="nav-menu-container">
                             <div class="nav-menu-title">
                                 <h4 class="title">聯絡Maxell</h4>
                             </div>
@@ -120,59 +112,81 @@ customElements.define('nav-top', class extends HTMLElement {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  // 獲取所有相關的 DOM 元素
-  const menuButton = document.querySelector('.nav-top .nav-menu-bt .menu');
-  const closeButton = document.querySelector('.nav-top .nav-menu-bt .close');
-  const navMenuZone = document.querySelector('.nav-top .left-side .nav-menu-zone');
-  const navMenuBt = document.querySelector('.nav-top .nav-menu-bt');
-  const navMenuContainers = document.querySelectorAll('.nav-top .left-side .nav-menu-zone .nav-menu-container');
 
-  // 1. 處理點擊 .nav-top .nav-menu-bt .menu
-  if (menuButton) {
-    menuButton.addEventListener('click', function() {
-      navMenuZone.classList.add('active');
-      navMenuBt.classList.add('active');
-    });
-  }
+const navMenuZone = document.querySelector('.nav-top .left-side .nav-menu-zone');
+document.addEventListener('DOMContentLoaded', function () {
+    // 獲取所有相關的 DOM 元素
+    const menuButton = document.querySelector('.nav-top .nav-menu-bt .menu');
+    const closeButton = document.querySelector('.nav-top .nav-menu-bt .close');
 
-  // 2. 處理點擊 .nav-top .nav-menu-bt .close
-  if (closeButton) {
-    closeButton.addEventListener('click', function() {
-      navMenuZone.classList.remove('active');
-      navMenuBt.classList.remove('active');
-      
-      // 額外功能：當關閉菜單時，將所有打開的子菜單也關閉
-      navMenuContainers.forEach(container => {
-        container.classList.remove('active');
-      });
-    });
-  }
+    const navMenuBt = document.querySelector('.nav-top .nav-menu-bt');
+    const navMenuContainers = document.querySelectorAll('.nav-top .left-side .nav-menu-zone .nav-menu-container');
 
-  // 3. 處理點擊 .nav-top .left-side .nav-menu-zone .nav-menu-container
-  navMenuContainers.forEach(container => {
-    container.addEventListener('click', function(event) {
-      // 檢查子元素是否有 .nav-menu-dropdown-list
-      const dropdownList = this.querySelector('.nav-menu-dropdown-list');
+    // 1. 處理點擊 .nav-top .nav-menu-bt .menu
+    if (menuButton) {
+        menuButton.addEventListener('click', function () {
+            navMenuZone.classList.add('active');
+            navMenuBt.classList.add('active');
+        });
+    }
 
-      if (dropdownList) {
-        // 阻止事件冒泡，避免點擊下拉菜單內容時觸發 container 的點擊事件
-        event.stopPropagation(); 
+    // 2. 處理點擊 .nav-top .nav-menu-bt .close
+    if (closeButton) {
+        closeButton.addEventListener('click', function () {
+            navMenuZone.classList.remove('active');
+            navMenuBt.classList.remove('active');
 
-        // 檢查 .nav-menu-container 的 classList 是否有 .active
-        if (this.classList.contains('active')) {
-          this.classList.remove('active');
-        } else {
-          // 展開新的子菜單時，先關閉所有其他的子菜單
-          navMenuContainers.forEach(otherContainer => {
-            if (otherContainer !== this && otherContainer.classList.contains('active')) {
-              otherContainer.classList.remove('active');
+            // 額外功能：當關閉菜單時，將所有打開的子菜單也關閉
+            navMenuContainers.forEach(container => {
+                container.classList.remove('active');
+            });
+        });
+    }
+
+    // 3. 處理點擊 .nav-top .left-side .nav-menu-zone .nav-menu-container
+    navMenuContainers.forEach(container => {
+        container.addEventListener('click', function (event) {
+            // 檢查子元素是否有 .nav-menu-dropdown-list
+            const dropdownList = this.querySelector('.nav-menu-dropdown-list');
+
+            if (dropdownList) {
+                // 阻止事件冒泡，避免點擊下拉菜單內容時觸發 container 的點擊事件
+                event.stopPropagation();
+
+                // 檢查 .nav-menu-container 的 classList 是否有 .active
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active');
+                } else {
+                    // 展開新的子菜單時，先關閉所有其他的子菜單
+                    navMenuContainers.forEach(otherContainer => {
+                        if (otherContainer !== this && otherContainer.classList.contains('active')) {
+                            otherContainer.classList.remove('active');
+                        }
+                    });
+                    this.classList.add('active');
+                }
             }
-          });
-          this.classList.add('active');
-        }
-      }
-      // 如果沒有 .nav-menu-dropdown-list，則不處理（符合題目要求）
+            // 如果沒有 .nav-menu-dropdown-list，則不處理（符合題目要求）
+        });
     });
-  });
 });
+console.log(navMenuZone);
+function updateNavMenuClass() {
+    const isMobile = window.innerWidth < 991;
+
+    if (isMobile) {
+        if (!navMenuZone.classList.contains('scroll-box-1')) {
+            navMenuZone.classList.add('scroll-box-1');
+        }
+    } else {
+        if (navMenuZone.classList.contains('scroll-box-1')) {
+            navMenuZone.classList.remove('scroll-box-1');
+        }
+    }
+}
+
+// 初次載入時檢查一次
+updateNavMenuClass();
+
+// 當視窗尺寸改變時再檢查
+window.addEventListener('resize', updateNavMenuClass);

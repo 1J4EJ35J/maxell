@@ -47,4 +47,8 @@
   display: grid;
   grid-template-rows: auto 1fr;
   gap: 2.25rem;
+}
+
+.card-container {
+  cursor: pointer;
 }/*# sourceMappingURL=home.css.map */

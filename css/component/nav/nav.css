@@ -78,16 +78,16 @@
   transition: all 0.3s ease;
 }
 .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-dropdown-list .nav-menu-dropdown-option {
-  width: -moz-fit-content;
-  width: fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: 100%;
   display: flex;
 }
 .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-dropdown-list .nav-menu-dropdown-option a.text {
+  width: 100%;
   padding: 0.5rem 1rem;
   display: inline-block;
   font-size: 1.05rem;
-  width: -moz-fit-content;
-  width: fit-content;
   white-space: nowrap;
   transition: all 0.5s ease;
 }

@@ -42,6 +42,7 @@
             padding-left: 1.5rem;
             height: 100%;
             background: var(--white-100);
+
             .nav-menu-container {
                 position: relative;
                 height: 100%;
@@ -89,14 +90,15 @@
                     @include ease-030s;
 
                     .nav-menu-dropdown-option {
-                        width: fit-content;
+                        min-width: fit-content;
+                        max-width: 100%;
                         display: flex;
 
                         a.text {
+                            width: 100%;
                             padding: .5rem 1rem;
                             display: inline-block;
                             font-size: 1.05rem;
-                            width: fit-content;
                             white-space: nowrap;
                             @include ease-050s;
 
@@ -157,19 +159,23 @@
                 color: var(--c-01-100);
             }
         }
-        .close{
+
+        .close {
             display: none;
         }
-        .menu{
+
+        .menu {
             display: flex;
         }
-        &.active{
-            .close{
-            display: flex;
-        }
-        .menu{
-            display: none;
-        }
+
+        &.active {
+            .close {
+                display: flex;
+            }
+
+            .menu {
+                display: none;
+            }
         }
     }
 
@@ -180,7 +186,8 @@
     .nav-top .nav-menu-bt {
         display: flex;
     }
-    .nav-top .left-side .nav-menu-zone{
+
+    .nav-top .left-side .nav-menu-zone {
         position: fixed;
         top: 60px;
         right: 0;
@@ -192,41 +199,49 @@
         padding-left: 0;
         width: 340px;
         padding-top: 1rem;
-        &.active{
+
+        &.active {
             display: flex;
         }
     }
-    .nav-top .left-side .nav-menu-zone .nav-menu-container{
+
+    .nav-top .left-side .nav-menu-zone .nav-menu-container {
         width: 100%;
         height: fit-content;
         padding: 1rem 0 1rem 1.5rem;
-        &:hover{
-            .nav-menu-dropdown-list{
+
+        &:hover {
+            .nav-menu-dropdown-list {
                 display: none;
             }
         }
-        &.active{
-            .nav-menu-dropdown-list{
+
+        &.active {
+            .nav-menu-dropdown-list {
                 display: flex;
             }
         }
     }
-    .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-title{
+
+    .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-title {
         height: fit-content;
     }
+
     .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-title .title {
         align-self: flex-start;
         font-size: 1.25rem;
         font-weight: 400;
     }
-    .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-dropdown-list{
+
+    .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-dropdown-list {
         position: relative;
         top: auto;
         height: fit-content;
         width: 100%;
         box-shadow: none;
-        
+
     }
+
     .nav-top .left-side .nav-menu-zone .nav-menu-container .nav-menu-dropdown-list .nav-menu-dropdown-option a.text {
         font-size: 1.25rem;
         color: var(--gray-03);
