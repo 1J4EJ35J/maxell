@@ -1,4 +1,7 @@
 .Coin-Type-Lithium-Manganese-Dioxide-Rechargeable .table.style-1 .table-header .tr,
 .Coin-Type-Lithium-Manganese-Dioxide-Rechargeable .table.style-1 .table-body .tr {
-  grid-template-columns: 240px repeat(2, 120px);
+  grid-template-columns: 280px repeat(2, 120px);
+}
+.Coin-Type-Lithium-Manganese-Dioxide-Rechargeable .table.style-1 .table-body .tr .th.-rl3 {
+  grid-template-columns: 1fr 100px;
 }/*# sourceMappingURL=Coin-Type-Lithium-Manganese-Dioxide-Rechargeable.css.map */

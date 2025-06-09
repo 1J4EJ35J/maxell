@@ -49,15 +49,17 @@ customElements.define('footer-zone', class extends HTMLElement {
                         </div>
                         <div class="co-link">
                             <div class="container  notice">
-                                <a href="" class="font-size-m font-weight-6 pointer">聯絡Maxell</a>
-                                <a href="" class="font-size-m font-weight-6 pointer">隱私權政策</a>
-                                <a href="" class="font-size-m font-weight-6 pointer">Cookie政策</a>
+                                <a href="/page/contact/contact.html" class="font-size-m font-weight-6 pointer">聯絡Maxell</a>
+                                <a href="/page/policy/privacy/privacy.html" class="font-size-m font-weight-6 pointer">隱私權政策</a>
+                                <a href="/page/policy/cookie/cookie.html" class="font-size-m font-weight-6 pointer">Cookie政策</a>
                                 <a href="https://www2.maxell.co.jp/" target="_blank" class="font-size-m font-weight-6 pointer">全球公司分布</a>
                             </div>
                             <div class="container media">
-                                <a href="" class="font-size-m font-weight-6 pointer"><i class="fa-brands fa-instagram icon-control"></i></a>
-                                <a href="" class="font-size-m font-weight-6 pointer"><i class="fa-brands fa-facebook-f icon-control"></i></a>
-                                <a href="" class="font-size-m font-weight-6 pointer"><i class="fa-brands fa-youtube icon-control"></i></a>
+                                <!--
+                                    <a href="" class="font-size-m font-weight-6 pointer"><i class="fa-brands fa-instagram icon-control"></i></a>
+                                    <a href="" class="font-size-m font-weight-6 pointer"><i class="fa-brands fa-facebook-f icon-control"></i></a>
+                                    <a href="" class="font-size-m font-weight-6 pointer"><i class="fa-brands fa-youtube icon-control"></i></a>
+                                --!>
                             </div>
                         </div>
                     </div>
