@@ -69,7 +69,7 @@ customElements.define('nav-top', class extends HTMLElement {
                                 </li> 
                             </ul>
                         </div>
-                        <a href="" class="nav-menu-container">
+                        <a href="/page/news/news-overview.html" class="nav-menu-container">
                             <div class="nav-menu-title">
                                 <h4 class="title">最新消息/媒體新聞稿</h4>
                             </div>
