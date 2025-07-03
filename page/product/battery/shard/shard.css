@@ -49,7 +49,7 @@
 .bp-detail .top-side {
   padding: 5rem 0 2rem 0;
   display: grid;
-  grid-template-columns: 48% 1fr;
+  grid-template-columns: 42% 1fr;
   align-items: flex-start;
   gap: 2.5rem;
   width: 100%;
@@ -61,10 +61,14 @@
   gap: 4px;
 }
 .bp-detail .top-side .left-side .main-img.img-container.proportional-tool-ratio1x1.ratio1x1-album-img {
-  max-width: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  max-width: 320px;
 }
 .bp-detail .top-side .left-side .main-img .img-control {
+  max-width: 270px;
   display: none;
 }
 .bp-detail .top-side .left-side .main-img .img-control.active {

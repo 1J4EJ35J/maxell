@@ -41,8 +41,8 @@ ol {
 }
 
 .-mw {
-    width: 1200px;
-    max-width: 1200px;
+    width: 1000px;
+    max-width: 1000px;
     padding-left: 0;
     padding-right: 0;
     justify-self: center;
@@ -76,7 +76,7 @@ ol {
     color: var(--font-color-title);
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1080px) {
     .-mw {
         width: 100%;
         max-width: 100%;

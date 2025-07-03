@@ -95,13 +95,13 @@
 
 .ratio25x36 .card-zone .card-container {
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
   padding: 0 0;
 }
 
 .ratio1x1 .card-zone .card-container {
   width: 100%;
-  max-width: 360px;
+  max-width: 280px;
   padding: 0 0;
 }
 
@@ -113,12 +113,12 @@
 
 .proportional-tool-ratio25x36.ratio25x36-album-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
 }
 
 .proportional-tool-ratio1x1.ratio1x1-album-img {
   width: 100%;
-  max-width: 400px;
+  max-width: 320px;
 }
 
 .proportional-tool-ratio1x2.ratio1x2-album-img {

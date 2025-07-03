@@ -88,13 +88,13 @@
 
 .ratio25x36 .card-zone .card-container {
     width: 100%;//與.proportional-tool-ratio25x36.ratio25x36-album-img要相等
-    max-width: 400px;
+    max-width: 250px;
     padding: 0 0;
 }
 
 .ratio1x1 .card-zone .card-container {
     width: 100%;//與.proportional-tool-ratio1x1.ratio1x1-album-img要相等
-    max-width: 360px;
+    max-width: 280px;
     padding: 0 0;
 }
 .ratio1x2 .card-zone .card-container {
@@ -106,13 +106,13 @@
 .proportional-tool-ratio25x36.ratio25x36-album-img{
     width: 100%;
     //height: calc(250px / 1440px * 100vw);
-    max-width: 400px;
+    max-width: 250px;
     //max-height: calc(400px * (250px / 360px));
 }
 
 .proportional-tool-ratio1x1.ratio1x1-album-img{
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
 }
 .proportional-tool-ratio1x2.ratio1x2-album-img{
     width: 100%;

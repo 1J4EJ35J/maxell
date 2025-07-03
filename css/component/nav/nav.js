@@ -3,7 +3,7 @@ customElements.define('nav-top', class extends HTMLElement {
         this.innerHTML = `
             <div class="nav-top">
                 <div class="left-side">
-                    <div class="logo-container">
+                    <a href="/page/home/home.html" class="logo-container">
                         <div class="svg-box">
                             <svg width="301" height="114" viewBox="0 0 301 114" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_109_8346)">
@@ -39,7 +39,7 @@ customElements.define('nav-top', class extends HTMLElement {
                                 </defs>
                             </svg>
                         </div>
-                    </div>
+                    </a>
                     <div class="nav-menu-zone scroll-box-1">
                         <div class="nav-menu-container">
                             <div class="nav-menu-title">
@@ -61,7 +61,7 @@ customElements.define('nav-top', class extends HTMLElement {
                                     <a href="/page/product/battery/battery-overview.html" class="text">Battery products</a>
                                 </li>
                                 <li class="nav-menu-dropdown-option">
-                                    <a href="https://biz.maxell.com/en/adhesive_tapes_inks_functional_films/" class="text">Functional Materials</a>
+                                    <a href="https://biz.maxell.com/en/sliontec_tapes/" class="text">Adhesive Tapes</a>
                                 </li>
                                 
                                 <li class="nav-menu-dropdown-option">

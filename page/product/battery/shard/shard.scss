@@ -55,12 +55,12 @@
     .top-side {
         padding: 5rem 0 2rem 0;
         display: grid;
-        grid-template-columns: 48% 1fr;
+        grid-template-columns: 42% 1fr;
         align-items: flex-start;
         gap: 2.5rem;
         width: 100%;
         border-bottom: 1px solid var(--gray-02);
-
+        //max-height: 560px;
 
 
         .left-side {
@@ -70,15 +70,18 @@
 
             .main-img {
                 &.img-container.proportional-tool-ratio1x1.ratio1x1-album-img {
-                    max-width: unset;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 100%;
+                    max-width: 320px;
                 }
 
                 .img-control {
                     &.active {
                         display: block;
                     }
-
+                    max-width: 270px;
                     display: none;
                 }
             }

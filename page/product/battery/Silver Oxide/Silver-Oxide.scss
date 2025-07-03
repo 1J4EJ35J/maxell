@@ -15,11 +15,18 @@
 
         }
 
-
         .td {
             border-bottom: 1px solid var(--gray-02);
         }
-
-
+    }
+    .table.style-1 .table-body .tr .td.-p2 p{
+        height: 100%;
+        &:first-of-type{
+            width: 140px;
+            border-right: 1px solid var(--gray-02);
+        }
+    }
+    .table.style-1 .th.tp3 p:nth-of-type(2){
+        width: 140px;
     }
 }
