@@ -7,13 +7,11 @@
   height: 100vh;
   z-index: 40;
   opacity: 0;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   transition: all 0.25s linear;
 }
 .popup.active {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   opacity: 1;
 }
 .popup.style-1 .popup-wrapper {
