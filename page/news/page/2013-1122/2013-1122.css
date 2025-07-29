@@ -1,4 +1,4 @@
 .y2013-1122 .table.style-1 .table-header .tr,
 .y2013-1122 .table.style-1 .table-body .tr {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: minmax(200px, 1fr) minmax(160px, 0.5fr) 80px 120px 120px;
 }/*# sourceMappingURL=2013-1122.css.map */

@@ -1,6 +1,6 @@
 .y2013-1122{
     .table.style-1 .table-header .tr,
     .table.style-1 .table-body .tr{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:minmax(200px, 1fr) minmax(160px, .5fr) 80px 120px 120px;
     }
 }
